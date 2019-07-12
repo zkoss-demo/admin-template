@@ -1,0 +1,36 @@
+
+.content{
+    flex: 1 1 auto;
+}
+
+.flexbox{
+    display:flex;
+}
+
+.state-box{
+    border: 1px solid #d9d9d9;
+}
+
+
+
+
+.sidebar{
+    flex: 0 0 190px;
+}
+
+.sidebar .z-grid{
+    border: none;
+    /*border-top: 1px solid #d9d9d9*/
+}
+
+.sidebar .z-row{
+    border: none;
+}
+
+.sidebar .z-cell{
+    padding: 12px 12px;
+}
+
+.user-logo{
+    padding: 20px 54px;
+}

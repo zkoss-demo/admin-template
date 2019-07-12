@@ -1,0 +1,10 @@
+<zk>
+    <div>
+        <label>Monthly Revenue Report</label>
+        <div>
+            From <datebox/> To <datebox/>
+            <button label="Apply"/>
+            <button label="View Statements" style="float:right"/>
+        </div>
+    </div>
+</zk>

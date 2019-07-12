@@ -1,0 +1,9 @@
+<zk>
+    <div>
+        <label>Location Sales</label>
+        <vlayout >
+            <label value="This week"/>
+            <label value="$5171"/>
+        </vlayout>
+    </div>
+</zk>

@@ -1,0 +1,62 @@
+<zk>
+    <div sclass="sidebar">
+        <div height="84px" sclass="user-logo" >
+            <image src="/resources/image/zklogo.png" width="30px"/>
+            admin
+        </div>
+        <grid width="100%">
+            <columns>
+                <column width="36px"/>
+                <column />
+                <column width="36px"/>
+            </columns>
+            <rows>
+            <row>
+                <cell></cell>
+                <cell>Dashboard</cell>
+                <cell >2</cell>
+            </row>
+            <row>
+                <cell></cell>
+                <cell>Ecommerce</cell>
+                <cell ></cell>
+            </row>
+            <row>
+                <cell></cell>
+                <cell>Project</cell>
+                <cell ></cell>
+            </row>
+            <row>
+                <cell></cell>
+                <cell>Typography</cell>
+                <cell ></cell>
+            </row>
+            <row>
+                <cell></cell>
+                <cell>UI Elements</cell>
+                <cell ></cell>
+            </row>
+            <row>
+                <cell></cell>
+                <cell>Tables</cell>
+                <cell ></cell>
+            </row>
+            <row>
+                <cell></cell>
+                <cell>Contact</cell>
+                <cell ></cell>
+            </row>
+            <row>
+                <cell></cell>
+                <cell>Freeze</cell>
+                <cell ></cell>
+            </row>
+            <row>
+                <cell></cell>
+                <cell>Logout</cell>
+                <cell ></cell>
+            </row>
+            </rows>
+        </grid>
+    </div>
+</zk>
