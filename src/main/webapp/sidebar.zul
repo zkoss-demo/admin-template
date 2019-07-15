@@ -1,5 +1,5 @@
 <zk>
-    <div sclass="sidebar">
+    <div sclass="sidebar" viewModel="@id('vm')@init('org.zkoss.admin.SidebarVM')">
         <div height="84px" sclass="user-logo" >
             <image src="/resources/image/zklogo.png" width="30px"/>
             admin
@@ -11,17 +11,17 @@
                 <column width="36px"/>
             </columns>
             <rows>
-            <row>
+            <row >
                 <cell></cell>
                 <cell>Dashboard</cell>
                 <cell >2</cell>
             </row>
-            <row>
+            <row onClick="@command('navigate', page='ecommerce/ecommerce.zul')">
                 <cell></cell>
                 <cell>Ecommerce</cell>
                 <cell ></cell>
             </row>
-            <row>
+            <row onClick="@command('navigate', page='project/project.zul')">
                 <cell></cell>
                 <cell>Project</cell>
                 <cell ></cell>

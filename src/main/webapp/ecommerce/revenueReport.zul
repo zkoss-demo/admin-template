@@ -1,10 +1,9 @@
 <zk>
-    <div>
-        <label>Monthly Revenue Report</label>
-        <div>
+    <panel title="Monthly Revenue Report" border="normal">
+        <panelchildren>
             From <datebox/> To <datebox/>
             <button label="Apply"/>
             <button label="View Statements" style="float:right"/>
-        </div>
-    </div>
+        </panelchildren>
+    </panel>
 </zk>

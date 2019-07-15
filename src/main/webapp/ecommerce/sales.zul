@@ -1,9 +1,10 @@
 <zk>
-    <div>
-        <label>Location Sales</label>
-        <vlayout >
-            <label value="This week"/>
-            <label value="$5171"/>
-        </vlayout>
-    </div>
+    <panel title="Location Sales" border="normal">
+        <panelchildren>
+            <vlayout>
+                <label value="This week"/>
+                <label value="$5171"/>
+            </vlayout>
+        </panelchildren>
+    </panel>
 </zk>

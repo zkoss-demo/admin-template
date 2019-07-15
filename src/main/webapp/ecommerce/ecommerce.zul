@@ -1,32 +1,44 @@
 <zk xmlns:n="native">
-    <div sclass="content">
+    <b-row >
+        <label sclass="title">Ecommerce Dashboard</label>
+    </b-row>
+    <b-row >
+        <forEach begin="0" end="3">
+            <b-row sclass="col-md-3 ">
+                <div sclass="state-box">
+                state
 
-    <div sclass="container-fluid">
-        <div sclass="row">
-            <forEach begin="0" end="3">
-                <div sclass="state-box col-md-3">state</div>
-            </forEach>
-        </div>
-        <div sclass="row">
-            <n:div sclass="col-md-7">
-                <apply templateURI="ecommerce/revenueReport.zul"/>
-            </n:div>
-            <n:div sclass="col-md-5">
-                <apply templateURI="ecommerce/sales.zul"/>
-            </n:div>
-        </div>
-        <div sclass="row">
-            <n:div sclass="col-md-5">
-            <charts type="pie"/>
-            </n:div>
-            <n:div sclass="col-md-7">
-            <charts type="bar"/>
-            </n:div>
-        </div>
-        <div sclass="row">
-            <n:div sclass="col-md-12">
-
-            <listbox hflex="1">
+                </div>
+            </b-row>
+        </forEach>
+    </b-row>
+    <b-row >
+        <n:div sclass="col-md-7">
+            <apply templateURI="ecommerce/revenueReport.zul"/>
+        </n:div>
+        <n:div sclass="col-md-5">
+            <apply templateURI="ecommerce/sales.zul"/>
+        </n:div>
+    </b-row>
+    <b-row >
+        <n:div sclass="col-md-5">
+            <panel title="Header" border="normal" width="100%">
+                <panelchildren>
+                    <charts type="pie"/>
+                </panelchildren>
+            </panel>
+        </n:div>
+        <n:div sclass="col-md-7">
+            <panel title="Header" border="normal" width="100%">
+                <panelchildren>
+                    <charts type="bar"/>
+                </panelchildren>
+            </panel>
+        </n:div>
+    </b-row>
+    <b-row >
+        <n:div sclass="col-md-12">
+            <listbox width="100%">
                 <listhead>
                     <listheader label="Product"></listheader>
                     <listheader label="Quantity"></listheader>
@@ -34,8 +46,6 @@
                     <listheader label="Amount"></listheader>
                 </listhead>
             </listbox>
-            </n:div>
-        </div>
-    </div>
-    </div>
+        </n:div>
+    </b-row>
 </zk>
