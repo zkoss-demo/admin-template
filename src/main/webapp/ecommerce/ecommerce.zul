@@ -37,20 +37,26 @@
     </b-row>
     <b-row>
         <n:div class="col-md-12 px-md-1">
-            <panel title="Header" border="normal">
+            <panel title="Header" border="normal" viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.ProductVM')">
                 <panelchildren>
-                    <listbox hflex="1">
+                    <listbox hflex="1" model="@init(vm.productList)">
                         <listhead>
-                            <listheader label="Product"></listheader>
+                            <listheader label="Name"></listheader>
                             <listheader label="Quantity"></listheader>
                             <listheader label="Price"></listheader>
                             <listheader label="Amount"></listheader>
                         </listhead>
                     </listbox>
+                    <template name="model">
+                        <listitem>
+                            <listcell label="${each.name}"/>
+                            <listcell label="@init(each.quantity)"/>
+                            <listcell label="@init(('$' += each.price))" />
+                            <listcell label="@init(('$' += each.amount))" />
+                        </listitem>
+                    </template>
                 </panelchildren>
             </panel>
         </n:div>
     </b-row>
-    <!--
-    -->
 </nodom>
