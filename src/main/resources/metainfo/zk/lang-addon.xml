@@ -15,4 +15,9 @@
 			<property-value>row py-md-2</property-value>
 		</property>
 	</component>
+	<stylesheet href="/resources/css/state-box.css" type="text/css"/>
+	<component>
+		<component-name>state-box</component-name>
+		<template-uri>/WEB-INF/template/stateBox.zul</template-uri>
+	</component>
 </language-addon>
