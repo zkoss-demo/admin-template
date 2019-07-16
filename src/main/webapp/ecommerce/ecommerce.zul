@@ -1,51 +1,56 @@
-<zk xmlns:n="native">
-    <b-row >
-        <label sclass="title">Ecommerce Dashboard</label>
+<nodom xmlns:n="native" viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.EcommerceVM')">
+    <b-row>
+        <label sclass="lead">Ecommerce Dashboard</label>
     </b-row>
-    <b-row >
-        <forEach begin="0" end="3">
-            <b-row sclass="col-md-3 ">
-                <div sclass="state-box">
-                state
-
-                </div>
-            </b-row>
+    <b-row>
+        <forEach items="@init(vm.states)">
+            <n:div sclass="col-12 col-md-3 px-md-1">
+                <state-box state="@init(each)"
+                           icon="@init(each.type)@converter('org.zkoss.admin.ecommerce.TypeIconConverter')"
+                           color="@init(each.type)@converter('org.zkoss.admin.ecommerce.TypeColorConverter')"/>
+            </n:div>
         </forEach>
     </b-row>
-    <b-row >
-        <n:div sclass="col-md-7">
+    <b-row>
+        <n:div sclass="col-md-7 px-md-1">
             <apply templateURI="ecommerce/revenueReport.zul"/>
         </n:div>
-        <n:div sclass="col-md-5">
+        <n:div sclass="col-md-5 px-md-1">
             <apply templateURI="ecommerce/sales.zul"/>
         </n:div>
     </b-row>
-    <b-row >
-        <n:div sclass="col-md-5">
-            <panel title="Header" border="normal" width="100%">
+    <b-row>
+        <n:div sclass="col-md-5 px-md-1">
+            <panel title="Header" border="normal">
                 <panelchildren>
                     <charts type="pie"/>
                 </panelchildren>
             </panel>
         </n:div>
-        <n:div sclass="col-md-7">
-            <panel title="Header" border="normal" width="100%">
+        <n:div sclass="col-md-7 px-md-1">
+            <panel title="Header" border="normal">
                 <panelchildren>
                     <charts type="bar"/>
                 </panelchildren>
             </panel>
         </n:div>
     </b-row>
-    <b-row >
-        <n:div sclass="col-md-12">
-            <listbox width="100%">
-                <listhead>
-                    <listheader label="Product"></listheader>
-                    <listheader label="Quantity"></listheader>
-                    <listheader label="Price"></listheader>
-                    <listheader label="Amount"></listheader>
-                </listhead>
-            </listbox>
+    <b-row>
+        <n:div class="col-md-12 px-md-1">
+            <panel title="Header" border="normal">
+                <panelchildren>
+                    <listbox hflex="1">
+                        <listhead>
+                            <listheader label="Product"></listheader>
+                            <listheader label="Quantity"></listheader>
+                            <listheader label="Price"></listheader>
+                            <listheader label="Amount"></listheader>
+                        </listhead>
+                    </listbox>
+                </panelchildren>
+            </panel>
         </n:div>
     </b-row>
-</zk>
+    <!--
+    -->
+</nodom>
