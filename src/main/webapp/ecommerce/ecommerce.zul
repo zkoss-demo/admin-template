@@ -1,6 +1,6 @@
 <nodom xmlns:n="native" viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.EcommerceVM')">
     <b-row>
-        <label sclass="lead">Ecommerce Dashboard</label>
+        <n:span class="font-weight-bold">Ecommerce Dashboard</n:span>
     </b-row>
     <b-row>
         <forEach items="@init(vm.states)">

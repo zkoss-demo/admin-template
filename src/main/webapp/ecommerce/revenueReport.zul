@@ -1,9 +1,10 @@
 <zk>
-    <panel title="Monthly Revenue Report" border="normal">
+    <panel title="Monthly Revenue Report" border="normal" viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.report.RevenueVM')">
         <panelchildren>
             From <datebox/> To <datebox/>
             <button label="Apply"/>
             <button label="View Statements" style="float:right"/>
+            <charts id="chart" type="line" title="Revenue Report"/>
         </panelchildren>
     </panel>
 </zk>
