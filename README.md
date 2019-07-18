@@ -2,7 +2,10 @@
 
 This project integrates with the following 3rd party frameworks/resources:
 * [Bootstrap 4.3.1](https://getbootstrap.com/)
-* [Font Awesome·](): bundled with ZK framework
+* [Font Awesome·4.7.0.](https://fontawesome.com/v4.7.0/icons/): bundled with ZK framework (since 8.5.2)
+
+It includes above client-side libraries with [Webjars](https://www.webjars.org/).
+
 
 # How to Run
 ## No Maven installed
@@ -25,3 +28,11 @@ visit [http://localhost:8080](http://localhost:8080)
 
 * sidebar fixed width
 * container includes sidebar
+
+# Browser compatibility
+* Chrome 49
+* Edge 15
+* Firefox 31
+* Opera 36
+* Safari
+* All mobile browsers
