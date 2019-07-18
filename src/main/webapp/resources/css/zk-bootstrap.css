@@ -1,0 +1,26 @@
+/**
+ * This CSS declares custom properties for Bootstrap color code, so that we can apply the color on Zk components with the attribute "sclass".
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+ */
+
+.success {
+    --bg-color: var(--success);
+}
+
+.danger {
+    --bg-color: var(--danger);
+}
+
+.warning{
+    --bg-color: var(--warning);
+}
+
+.primary {
+    --bg-color: var(--primary);
+}
+
+
+/* apply to zk components differently */
+.z-progressmeter-image {
+    background-color: var(--bg-color);
+}

@@ -1,10 +1,33 @@
-<zk>
-    <panel title="Location Sales" border="normal">
+<zk xmlns:n="native">
+    <panel title="Product Sales" border="normal" viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.SaleVM')">
         <panelchildren>
-            <vlayout>
-                <label value="This week"/>
-                <label value="$5171"/>
-            </vlayout>
+            <div>
+                <apply template="price-mark" sclass="" title="This Week" price="$5,171"/>
+                <apply template="price-mark" sclass="float-right" title="Average" price="$10,856"/>
+            </div>
+            <forEach items="@init(vm.productList)">
+                <apply template="progress" name="@init(each.name)" percentage="@init(each.amount/100)" sale="@init(each.amount)"
+                       sclass="@init(forEachStatus.index)@converter('org.zkoss.admin.ecommerce.IntColorConverter')"/>
+            </forEach>
         </panelchildren>
     </panel>
+    <template name="price-mark">
+        <vlayout sclass="${sclass}" style="display: inline-block">
+            <label value="${title}"/>
+            <n:h5>${price}</n:h5>
+        </vlayout>
+    </template>
+    <template name="progress">
+        <rowlayout ncols="12">
+            <rowchildren colspan="2">
+                <label>${name}</label>
+            </rowchildren>
+            <rowchildren colspan="8">
+                <progressmeter value="${percentage}" width="100%" sclass="${sclass}"/>
+            </rowchildren>
+            <rowchildren colspan="2">
+                ${sale}
+            </rowchildren>
+        </rowlayout>
+    </template>
 </zk>
