@@ -1,0 +1,9 @@
+<zk xmlns:n="native">
+    <idspace>
+    <panel title="Product Import" border="normal" viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.ProductImportVM')">
+        <panelchildren>
+            <charts id="chart" type="column" />
+        </panelchildren>
+    </panel>
+    </idspace>
+</zk>

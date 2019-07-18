@@ -1,5 +1,5 @@
 <zk>
-    <panel title="Monthly Revenue Report" border="normal" viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.report.RevenueVM')">
+    <panel title="Monthly Revenue Report" border="normal" viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.RevenueVM')">
         <panelchildren>
             From <datebox/> To <datebox/>
             <button label="Apply"/>

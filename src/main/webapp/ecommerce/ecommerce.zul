@@ -21,18 +21,10 @@
     </b-row>
     <b-row>
         <n:div sclass="col-md-5 px-md-1">
-            <panel title="Header" border="normal">
-                <panelchildren>
-                    <charts type="pie"/>
-                </panelchildren>
-            </panel>
+            <apply templateURI="ecommerce/marketShare.zul"/>
         </n:div>
         <n:div sclass="col-md-7 px-md-1">
-            <panel title="Header" border="normal">
-                <panelchildren>
-                    <charts type="bar"/>
-                </panelchildren>
-            </panel>
+            <apply templateURI="ecommerce/import.zul"/>
         </n:div>
     </b-row>
     <b-row>
