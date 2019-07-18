@@ -38,7 +38,7 @@ public class Dao {
         if (productList.size() == 0) {
             for (String name : PRODUCT_NAMES) {
                 Product product = new Product(name);
-                product.setQuantity(random.nextInt(100));
+                product.setQuantity(nextInt(100, 20));
                 product.setPrice(random.nextInt(1000) / 10);
                 productList.add(product);
             }
@@ -48,5 +48,9 @@ public class Dao {
 
     public static ChartsModel getProductImportData() {
         return productImportModel;
+    }
+
+    static int nextInt(int high, int low){
+        return random.nextInt(high-low) + low;
     }
 }
