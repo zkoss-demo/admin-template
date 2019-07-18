@@ -4,7 +4,7 @@
             <n:div class="col-8 info">
                 <n:div class="title">${state.type}</n:div>
                 <n:div class="value">${state.value}</n:div>
-                <label sclass="percentage text-info" value="@init(state.ratio)@converter('org.zkoss.admin.ecommerce.PercentageConverter')"/>
+                <label sclass="percentage text-info" value="@init(state.ratio)@converter('org.zkoss.admin.ecommerce.util.PercentageConverter')"/>
             </n:div>
             <n:div class="col-4 icon text-right px-md-3">
                 <n:h2>
