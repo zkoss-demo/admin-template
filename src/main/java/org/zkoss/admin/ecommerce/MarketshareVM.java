@@ -1,5 +1,6 @@
 package org.zkoss.admin.ecommerce;
 
+import org.zkoss.admin.ecommerce.dao.*;
 import org.zkoss.bind.annotation.*;
 import org.zkoss.chart.*;
 import org.zkoss.chart.plotOptions.*;

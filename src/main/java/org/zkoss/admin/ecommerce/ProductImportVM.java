@@ -1,12 +1,11 @@
 package org.zkoss.admin.ecommerce;
 
+import org.zkoss.admin.ecommerce.dao.Dao;
 import org.zkoss.bind.annotation.*;
 import org.zkoss.chart.*;
 import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.select.Selectors;
 import org.zkoss.zk.ui.select.annotation.Wire;
-
-import java.util.List;
 
 public class ProductImportVM {
     @Wire

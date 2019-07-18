@@ -1,4 +1,4 @@
-package org.zkoss.admin.ecommerce;
+package org.zkoss.admin.ecommerce.dao;
 
 public class Product {
     private String name;

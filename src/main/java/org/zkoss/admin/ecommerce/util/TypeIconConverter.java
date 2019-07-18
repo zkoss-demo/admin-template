@@ -1,6 +1,7 @@
-package org.zkoss.admin.ecommerce;
+package org.zkoss.admin.ecommerce.util;
 
 
+import org.zkoss.admin.ecommerce.dao.Type;
 import org.zkoss.bind.*;
 import org.zkoss.zk.ui.Component;
 
