@@ -1,27 +1,14 @@
-
-.content{
-    flex: 1 1 auto;
-    padding: 23px;
-}
-
-.flexbox{
-    display:flex;
-}
-
-
-.title{
-    font-weight: bold;
-}
-
-
 /* sidebar */
+.sidebar-md{
+    flex: 0 0 190px;
+}
+
 .sidebar{
     flex: 0 0 190px;
 }
 
 .sidebar .z-grid{
     border: none;
-    /*border-top: 1px solid #d9d9d9*/
 }
 
 .sidebar .z-row{
