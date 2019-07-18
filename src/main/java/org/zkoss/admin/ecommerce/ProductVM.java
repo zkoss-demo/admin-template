@@ -1,25 +1,14 @@
 package org.zkoss.admin.ecommerce;
 
 import org.zkoss.bind.annotation.Init;
-import java.util.*;
-import static org.zkoss.admin.ecommerce.Dao.random;
+import java.util.List;
 
 public class ProductVM {
-    private List<Product> productList = new LinkedList<>();
-    static String productNames[] = {"Charts", "Framework", "Theme Pack", "Spreadsheet", "Calendar", "Pivot Table"};
+    private List<Product> productList;
 
     @Init
     public void init(){
-        queryProduct();
-    }
-
-    private void queryProduct(){
-        for (String name :productNames){
-            Product product = new Product(name);
-            product.setQuantity(random.nextInt(100));
-            product.setPrice(random.nextInt(1000) / 10);
-            productList.add(product);
-        }
+        productList = Dao.queryProduct();
     }
 
     public List<Product> getProductList() {
