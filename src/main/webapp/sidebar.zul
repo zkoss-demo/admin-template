@@ -1,138 +1,30 @@
 <?component name="counter" templateURI="/WEB-INF/template/counter.zul"?>
-<zk xmlns:n="native">
+<zk xmlns:n="native" xmlns="http://www.zkoss.org/2005/zul">
     <nodom viewModel="@id('vm')@init('org.zkoss.admin.SidebarVM')">
         <div sclass="sidebar">
             <div height="84px" sclass="user-logo text-center">
                 <image src="/resources/image/zklogo.png" width="30px" sclass="rounded"/>
-                <if test="@load(vm.sidebarTemplate eq 'sidebar-md')">
+                <if test="@load(not vm.collapsed)">
                     <label value="@init(vm.userName)"/>
                 </if>
             </div>
-            <apply template="@load(vm.sidebarTemplate)"/>
+            <navbar orient="vertical" collapsed="@load(vm.collapsed)" >
+                <apply template="iterate" menuItems="@load(vm.menuList)"/>
+            </navbar>
         </div>
     </nodom>
-    <template name="sidebar">
-        <grid width="100%">
-            <columns>
-                <column align="center"/>
-            </columns>
-            <rows>
-                <row>
-                    <cell>
-                        <n:i class="z-icon-home"/>
-                    </cell>
-                </row>
-                <row onClick="@command('navigate', page='ecommerce/ecommerce.zul')">
-                    <cell></cell>
-                </row>
-                <row onClick="@command('navigate', page='project/project.zul')">
-                    <cell></cell>
-                </row>
-                <row>
-                    <cell>
-                        <n:i class="z-icon-flag-o"/>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <n:i class="z-icon-flag-o"/>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <n:i class="z-icon-flag-o"/>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <n:i class="z-icon-envelope-o"/>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <n:i class="z-icon-snowflake-o"/>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <n:i class="z-icon-power-off"/>
-                    </cell>
-                </row>
-            </rows>
-        </grid>
+
+    <template name="iterate">
+        <forEach items="@load(menuItems)">
+            <apply template="@load(empty each.subMenus?'menuitem':'menu')" menuItem="@load(each)"/>
+        </forEach>
     </template>
-    <template name="sidebar-md">
-        <grid width="100%">
-            <columns>
-                <column width="36px"/>
-                <column/>
-                <column width="36px"/>
-            </columns>
-            <rows>
-                <row>
-                    <cell>
-                        <n:i class="z-icon-home"/>
-                    </cell>
-                    <cell>Dashboard</cell>
-                    <cell>
-                        <counter value="@init(vm.counter[0])"/>
-                    </cell>
-                </row>
-                <row onClick="@command('navigate', page='ecommerce/ecommerce.zul')">
-                    <cell></cell>
-                    <cell>Ecommerce</cell>
-                    <cell></cell>
-                </row>
-                <row onClick="@command('navigate', page='project/project.zul')">
-                    <cell></cell>
-                    <cell>Project</cell>
-                    <cell></cell>
-                </row>
-                <row>
-                    <cell>
-                        <n:i class="z-icon-flag-o"/>
-                    </cell>
-                    <cell>Typography</cell>
-                    <cell></cell>
-                </row>
-                <row>
-                    <cell>
-                        <n:i class="z-icon-flag-o"/>
-                    </cell>
-                    <cell>UI Elements</cell>
-                    <cell></cell>
-                </row>
-                <row>
-                    <cell>
-                        <n:i class="z-icon-flag-o"/>
-                    </cell>
-                    <cell>Tables</cell>
-                    <cell></cell>
-                </row>
-                <row>
-                    <cell>
-                        <n:i class="z-icon-envelope-o"/>
-                    </cell>
-                    <cell>Contact</cell>
-                    <cell>
-                        <counter value="@init(vm.counter[1])"/>
-                    </cell>
-                </row>
-                <row>
-                    <cell>
-                        <n:i class="z-icon-snowflake-o"/>
-                    </cell>
-                    <cell>Freeze</cell>
-                    <cell></cell>
-                </row>
-                <row>
-                    <cell>
-                        <n:i class="z-icon-power-off"/>
-                    </cell>
-                    <cell>Logout</cell>
-                    <cell></cell>
-                </row>
-            </rows>
-        </grid>
+    <template name="menu">
+        <nav label="@load(menuItem.label)" iconSclass="@load(menuItem.icon)">
+            <apply template="iterate" menuItems="@load(menuItem.subMenus)"/>
+        </nav>
+    </template>
+    <template name="menuitem">
+        <navitem label="@load(menuItem.label)" iconSclass="@load(menuItem.icon)" onClick="@command('navigate', menu=each)"/>
     </template>
 </zk>
