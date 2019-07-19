@@ -6,7 +6,7 @@
     </b-row>
     <b-row>
         <forEach items="@init(vm.states)">
-            <n:div sclass="col-12 col-md-3 px-1">
+            <n:div sclass="col-12 col-md-6 col-lg-3 px-1">
                 <state-box state="@init(each)"
                            icon="@init(each.type)@converter('org.zkoss.admin.ecommerce.util.TypeIconConverter')"
                            color="@init(each.type)@converter('org.zkoss.admin.ecommerce.util.TypeColorConverter')"/>
