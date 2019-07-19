@@ -1,10 +1,12 @@
 <nodom xmlns:n="native" viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.EcommerceVM')">
     <b-row>
+        <n:div sclass="col px-1">
         <n:span class="font-weight-bold">Ecommerce Dashboard</n:span>
+        </n:div>
     </b-row>
     <b-row>
         <forEach items="@init(vm.states)">
-            <n:div sclass="col-12 col-md-3 px-md-1">
+            <n:div sclass="col-12 col-md-3 px-1">
                 <state-box state="@init(each)"
                            icon="@init(each.type)@converter('org.zkoss.admin.ecommerce.util.TypeIconConverter')"
                            color="@init(each.type)@converter('org.zkoss.admin.ecommerce.util.TypeColorConverter')"/>
@@ -12,23 +14,23 @@
         </forEach>
     </b-row>
     <b-row>
-        <n:div sclass="col-md-7 px-md-1">
+        <n:div sclass="col-md-7 px-1">
             <apply templateURI="ecommerce/revenueReport.zul"/>
         </n:div>
-        <n:div sclass="col-md-5 px-md-1">
+        <n:div sclass="col-md-5 px-1">
             <apply templateURI="ecommerce/sales.zul"/>
         </n:div>
     </b-row>
     <b-row>
-        <n:div sclass="col-md-5 px-md-1">
+        <n:div sclass="col-md-5 px-1">
             <apply templateURI="ecommerce/marketShare.zul"/>
         </n:div>
-        <n:div sclass="col-md-7 px-md-1">
+        <n:div sclass="col-md-7 px-1">
             <apply templateURI="ecommerce/import.zul"/>
         </n:div>
     </b-row>
     <b-row>
-        <n:div class="col-md-12 px-md-1">
+        <n:div class="col-md-12 px-1">
             <panel title="Header" border="normal" viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.ProductVM')">
                 <panelchildren>
                     <listbox hflex="1" model="@init(vm.productList)">

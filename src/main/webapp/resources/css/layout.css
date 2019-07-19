@@ -1,24 +1,29 @@
 /* sidebar */
-.sidebar-md{
-    flex: 0 0 190px;
+
+@media(min-width:768px) {
+    .sidebar {
+        flex: 0 0 190px;
+    }
 }
 
-.sidebar{
-    flex: 0 0 190px;
+@media(max-width:767px) {
+    .sidebar {
+        flex: 0 0 55px;
+    }
 }
 
-.sidebar .z-grid{
+.user-logo {
+    padding: 20px 0;
+}
+.sidebar .z-grid {
     border: none;
 }
 
-.sidebar .z-row{
+.sidebar .z-row {
     border: none;
+    cursor: pointer;
 }
 
-.sidebar .z-cell{
+.sidebar .z-cell {
     padding: 12px 12px;
-}
-
-.user-logo{
-    padding: 20px 54px;
 }
