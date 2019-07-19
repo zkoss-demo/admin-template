@@ -1,4 +1,3 @@
-<?component name="counter" templateURI="/WEB-INF/template/counter.zul"?>
 <zk xmlns:n="native" xmlns="http://www.zkoss.org/2005/zul">
     <nodom viewModel="@id('vm')@init('org.zkoss.admin.SidebarVM')">
         <div sclass="sidebar">
