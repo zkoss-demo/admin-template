@@ -2,28 +2,20 @@
 
 @media(min-width:958px) {
     .sidebar {
-        flex: 0 0 190px;
+        min-width: 190px;
     }
 }
 
 @media(max-width:957px) {
     .sidebar {
-        flex: 0 0 55px;
+        min-width: 55px;
+    }
+    /* make navbar border fill the complete width */
+    .z-navbar-vertical{
+        max-width: 100%;
     }
 }
 
 .user-logo {
     padding: 20px 0;
-}
-.sidebar .z-grid {
-    border: none;
-}
-
-.sidebar .z-row {
-    border: none;
-    cursor: pointer;
-}
-
-.sidebar .z-cell {
-    padding: 12px 12px;
 }
