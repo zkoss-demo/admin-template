@@ -23,7 +23,7 @@
         </b-row>
         <b-row>
             <n:div class="col-12">
-                <charts id="chart" type="line" title="Revenue Report" hflex="1"/>
+                <charts id="chart" type="line" title="Revenue Report" />
             </n:div>
         </b-row>
 
