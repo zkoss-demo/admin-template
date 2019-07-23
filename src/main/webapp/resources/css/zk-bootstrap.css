@@ -2,6 +2,13 @@
  * This CSS declares custom properties for Bootstrap color code, so that we can apply the color on Zk components with the attribute "sclass".
  * https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
  */
+.primary {
+    --bg-color: var(--primary);
+}
+
+.secondary {
+    --bg-color: var(--secondary);
+}
 
 .success {
     --bg-color: var(--success);
@@ -15,9 +22,18 @@
     --bg-color: var(--warning);
 }
 
-.primary {
-    --bg-color: var(--primary);
+.info{
+    --bg-color: var(--info);
 }
+
+.light{
+    --bg-color: var(--light);
+}
+
+.dark{
+    --bg-color: var(--dark);
+}
+
 
 
 /* apply to zk components differently */
