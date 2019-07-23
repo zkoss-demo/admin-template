@@ -31,6 +31,13 @@ public class Dao {
             productImportModel.setValue(PRODUCT_NAMES[4], month, random.nextInt(10000));
         }
 
+        for (String name : PRODUCT_NAMES) {
+            Product product = new Product(name);
+            product.setQuantity(nextInt(100, 20));
+            product.setPrice(random.nextInt(1000) / 10);
+            productList.add(product);
+        }
+
         initMenus();
     }
 
@@ -39,14 +46,6 @@ public class Dao {
     }
 
     static public List<Product> queryProduct(){
-        if (productList.size() == 0) {
-            for (String name : PRODUCT_NAMES) {
-                Product product = new Product(name);
-                product.setQuantity(nextInt(100, 20));
-                product.setPrice(random.nextInt(1000) / 10);
-                productList.add(product);
-            }
-        }
         return productList;
     }
 
