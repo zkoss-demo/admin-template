@@ -19,16 +19,13 @@ public class RevenueVM {
         chart.setModel(Dao.getRevenueModel());
 
         chart.getTitle().setX(-20);
-
         chart.getSubtitle().setX(-20);
-
         chart.getYAxis().setTitle("dollars");
         PlotLine plotLine = new PlotLine();
         plotLine.setValue(0);
         plotLine.setWidth(1);
         plotLine.setColor("#808080");
         chart.getYAxis().addPlotLine(plotLine);
-
         chart.getTooltip().setValueSuffix("°C");
 
         Legend legend = chart.getLegend();

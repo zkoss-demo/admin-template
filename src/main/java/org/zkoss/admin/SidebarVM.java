@@ -27,13 +27,14 @@ public class SidebarVM {
         BindUtils.postNotifyChange(null, null, navigationModel, "contentUrl");
     }
 
-    @MatchMedia("all and (min-width: 768px)")
+    // medium breakpoint 768 + 190 (sidebar width)
+    @MatchMedia("all and (min-width: 958px)")
     @NotifyChange("collapsed")
     public void beWide(){
         collapsed = false;
     }
 
-    @MatchMedia("all and (max-width: 767px)")
+    @MatchMedia("all and (max-width: 957px)")
     @NotifyChange("collapsed")
     public void beNarrow(){
         collapsed = true;

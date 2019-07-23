@@ -1,12 +1,12 @@
 /* sidebar */
 
-@media(min-width:768px) {
+@media(min-width:958px) {
     .sidebar {
         flex: 0 0 190px;
     }
 }
 
-@media(max-width:767px) {
+@media(max-width:957px) {
     .sidebar {
         flex: 0 0 55px;
     }
