@@ -33,8 +33,8 @@
         <n:div class="col-md-12 px-1">
             <panel title="Header" border="normal" viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.ProductVM')">
                 <panelchildren>
-                    <listbox hflex="1" model="@init(vm.productList)">
-                        <listhead>
+                    <listbox hflex="1" model="@init(vm.productList)" >
+                        <listhead hflex="1">
                             <listheader label="Name"></listheader>
                             <listheader label="Quantity"></listheader>
                             <listheader label="Price"></listheader>
