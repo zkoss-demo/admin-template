@@ -3,7 +3,7 @@
 <?link rel="stylesheet" href="resources/css/layout.css" ?>
 <?link rel="stylesheet" href="resources/css/zk-bootstrap.css" ?>
 <zk xmlns:n="native">
-    <div width="100%" sclass="d-flex" viewModel="@id('vm')@init('org.zkoss.admin.MainVM')">
+    <div sclass="d-flex" viewModel="@id('vm')@init('org.zkoss.admin.MainVM')">
         <apply templateURI="sidebar.zul"/>
         <div sclass="flex-grow-1 flex-shrink-1">
             <div sclass="container-fluid">
