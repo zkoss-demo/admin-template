@@ -6,6 +6,15 @@
 * apply responsive design with Bootstrap and ZK
 * create a custom component with shadow elements
 
+# Screenshots
+
+![](image/screenshot-lg.png)
+
+![](image/screenshot-md.png)
+
+![](image/screenshot-sm.png)
+
+
 ## detail
 This project integrates with the following 3rd party frameworks/resources:
 * [Bootstrap 4.3.1](https://getbootstrap.com/)
