@@ -18,16 +18,16 @@
         </vlayout>
     </template>
     <template name="progress">
-        <rowlayout ncols="12">
-            <rowchildren colspan="2">
-                <label>${name}</label>
-            </rowchildren>
-            <rowchildren colspan="8">
+        <b-row >
+            <n:div class="col-lg-3 text-break">
+                <n:small>${name}</n:small>
+            </n:div>
+            <n:div class="col-lg-6">
                 <progressmeter value="${percentage}" width="100%" sclass="${sclass}"/>
-            </rowchildren>
-            <rowchildren colspan="2">
-                ${sale}
-            </rowchildren>
-        </rowlayout>
+            </n:div>
+            <n:div class="col-lg-3 text-secondary">
+                <n:small>${sale}</n:small>
+            </n:div>
+        </b-row>
     </template>
 </zk>
