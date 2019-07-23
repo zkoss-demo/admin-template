@@ -1,10 +1,31 @@
-<zk>
-    <panel title="Monthly Revenue Report" border="normal" viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.RevenueVM')">
-        <panelchildren>
-            From <datebox/> To <datebox/>
-            <button label="Apply"/>
-            <button label="View Statements" style="float:right"/>
-            <charts id="chart" type="line" title="Revenue Report"/>
-        </panelchildren>
-    </panel>
-</zk>
+<panel xmlns:n="native" title="Monthly Revenue Report" border="normal"
+       viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.RevenueVM')">
+    <panelchildren>
+        <b-row>
+            <n:div class="col-lg-1 px-1">
+                From
+            </n:div>
+            <n:div class="col-lg-2 px-1">
+                <datebox hflex="1"/>
+            </n:div>
+            <n:div class="col-lg-1 px-1">
+                To
+            </n:div>
+            <n:div class="col-lg-2 px-1">
+                <datebox hflex="1"/>
+            </n:div>
+            <n:div class="col-lg-1">
+                <button label="Apply"/>
+            </n:div>
+            <n:div class="col-lg-5 col-md-12">
+                <button label="View Statements" sclass="float-right"/>
+            </n:div>
+        </b-row>
+        <b-row>
+            <n:div class="col-12">
+                <charts id="chart" type="line" title="Revenue Report" hflex="1"/>
+            </n:div>
+        </b-row>
+
+    </panelchildren>
+</panel>
