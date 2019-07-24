@@ -7,6 +7,7 @@ public class Menu {
     private List<Menu> subMenus = new ArrayList<>();
     private String icon;
     private String path = "/blank.zul";
+    private int counter;
 
     public Menu() {
     }
@@ -50,5 +51,13 @@ public class Menu {
 
     public void setPath(String path) {
         this.path = path;
+    }
+
+    public int getCounter() {
+        return counter;
+    }
+
+    public void setCounter(int counter) {
+        this.counter = counter;
     }
 }

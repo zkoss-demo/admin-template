@@ -63,6 +63,7 @@ public class Dao {
 
     static public void initMenus(){
         Menu menuD = new Menu("Dashboard", "z-icon-home");
+        menuD.setCounter(Dao.nextInt(10, 1));
         Menu menuE = new Menu("Ecommerce");
         menuE.setPath("/ecommerce/ecommerce.zul");
         Menu menuP = new Menu("Project");
@@ -81,6 +82,7 @@ public class Dao {
         menuList.add(menuTable);
 
         Menu menuC = new Menu("Contact", "z-icon-envelope-o");
+        menuC.setCounter(Dao.nextInt(10, 1));
         menuList.add(menuC);
         Menu menuF = new Menu("Freeze", "z-icon-snowflake-o");
         menuList.add(menuF);

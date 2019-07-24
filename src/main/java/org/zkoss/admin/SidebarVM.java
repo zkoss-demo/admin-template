@@ -10,7 +10,6 @@ import static org.zkoss.admin.MainVM.NAVIGATION;
 
 public class SidebarVM {
     private NavigationMdel navigationModel;
-    private int counter[] = {2, 5};
     private String userName = "Admin";
     private List<Menu> menuList;
     private boolean collapsed = false; //sidebar is collapsed for narrow screen
@@ -38,10 +37,6 @@ public class SidebarVM {
     @NotifyChange("collapsed")
     public void beNarrow(){
         collapsed = true;
-    }
-
-    public int[] getCounter() {
-        return counter;
     }
 
     public String getUserName() {

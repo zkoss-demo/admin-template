@@ -7,23 +7,16 @@
                     <label value="@init(vm.userName)"/>
                 </if>
             </div>
-            <navbar orient="vertical" collapsed="@load(vm.collapsed)" >
-                <apply template="iterate" menuItems="@load(vm.menuList)"/>
+            <navbar orient="vertical" collapsed="@load(vm.collapsed)">
+                <forEach items="@load(vm.menuList)">
+                    <nav label="@load(each.label)" iconSclass="@load(each.icon)" badgeText="@init(each.counter eq 0?'':each.counter)">
+                        <forEach items="@load(each.subMenus)">
+                            <navitem label="@load(each.label)" iconSclass="@load(each.icon)"
+                                     onClick="@command('navigate', menu=each)"/>
+                        </forEach>
+                    </nav>
+                </forEach>
             </navbar>
         </div>
     </nodom>
-
-    <template name="iterate">
-        <forEach items="@load(menuItems)">
-            <apply template="@load(empty each.subMenus?'menuitem':'menu')" menuItem="@load(each)"/>
-        </forEach>
-    </template>
-    <template name="menu">
-        <nav label="@load(menuItem.label)" iconSclass="@load(menuItem.icon)">
-            <apply template="iterate" menuItems="@load(menuItem.subMenus)"/>
-        </nav>
-    </template>
-    <template name="menuitem">
-        <navitem label="@load(menuItem.label)" iconSclass="@load(menuItem.icon)" onClick="@command('navigate', menu=each)"/>
-    </template>
 </zk>
