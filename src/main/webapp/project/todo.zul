@@ -1,0 +1,8 @@
+<zk xmlns:n="native">
+    <panel title="To-do List" border="normal" viewModel="@id('vm')@init('org.zkoss.admin.project.TodoVM')">
+        <panelchildren>
+            <listbox checkmark="true" model="@init(vm.todoList)"></listbox>
+            <button label="Add"/>
+        </panelchildren>
+    </panel>
+</zk>
