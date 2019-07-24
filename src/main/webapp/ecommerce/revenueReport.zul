@@ -2,23 +2,23 @@
        viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.RevenueVM')">
     <panelchildren>
         <b-row>
-            <n:div class="col-lg-1 px-1">
+            <n:div class="col-lg-1">
                 From
             </n:div>
-            <n:div class="col-lg-2 px-1">
+            <n:div class="col-lg-2">
                 <datebox hflex="1"/>
             </n:div>
-            <n:div class="col-lg-1 px-1">
+            <n:div class="col-lg-1">
                 To
             </n:div>
-            <n:div class="col-lg-2 px-1">
+            <n:div class="col-lg-2">
                 <datebox hflex="1"/>
             </n:div>
             <n:div class="col-lg-1">
                 <button label="Apply"/>
             </n:div>
-            <n:div class="col-lg-5 col-md-12">
-                <button label="View Statements" sclass="float-right"/>
+            <n:div class="col-lg-5 text-right">
+                <button label="View Statements" />
             </n:div>
         </b-row>
         <b-row>
