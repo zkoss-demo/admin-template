@@ -1,40 +1,38 @@
 package org.zkoss.admin.ecommerce.dao;
 
+import org.zkoss.admin.util.Util;
 import org.zkoss.chart.model.*;
 
-import java.text.DateFormatSymbols;
 import java.util.*;
 
 /**
  * Data access object
  */
 public class Dao {
-    public static Random random = new Random();
     private static CategoryModel revenueModel;
     private static CategoryModel productImportModel;
     private static List<Product> productList = new LinkedList<>();
     private static List<Menu> menuList = new LinkedList<>();
 
-    static String[] MONTHS = new DateFormatSymbols().getMonths();
     public static String[] PRODUCT_NAMES = {"Charts", "Framework", "Theme Pack", "Spreadsheet", "Calendar", "Pivot Table"};
 
     static {
         revenueModel = new DefaultCategoryModel();
-        for (String month : MONTHS) {
-            revenueModel.setValue(PRODUCT_NAMES[1], month, random.nextInt(10000));
-            revenueModel.setValue(PRODUCT_NAMES[3], month, random.nextInt(10000));
+        for (String month : Util.MONTHS) {
+            revenueModel.setValue(PRODUCT_NAMES[1], month, Util.random.nextInt(10000));
+            revenueModel.setValue(PRODUCT_NAMES[3], month, Util.random.nextInt(10000));
         }
 
         productImportModel = new DefaultCategoryModel();
-        for (String month : MONTHS) {
-            productImportModel.setValue(PRODUCT_NAMES[3], month, random.nextInt(10000));
-            productImportModel.setValue(PRODUCT_NAMES[4], month, random.nextInt(10000));
+        for (String month : Util.MONTHS) {
+            productImportModel.setValue(PRODUCT_NAMES[3], month, Util.random.nextInt(10000));
+            productImportModel.setValue(PRODUCT_NAMES[4], month, Util.random.nextInt(10000));
         }
 
         for (String name : PRODUCT_NAMES) {
             Product product = new Product(name);
-            product.setQuantity(nextInt(100, 20));
-            product.setPrice(random.nextInt(1000) / 10);
+            product.setQuantity(Util.nextInt(100, 20));
+            product.setPrice(Util.random.nextInt(1000) / 10);
             productList.add(product);
         }
 
@@ -53,17 +51,13 @@ public class Dao {
         return productImportModel;
     }
 
-    static int nextInt(int high, int low){
-        return random.nextInt(high-low) + low;
-    }
-
     static public List<Menu> queryMenu(){
         return menuList;
     }
 
     static public void initMenus(){
         Menu menuD = new Menu("Dashboard", "z-icon-home");
-        menuD.setCounter(Dao.nextInt(10, 1));
+        menuD.setCounter(Util.nextInt(10, 1));
         Menu menuE = new Menu("Ecommerce");
         menuE.setPath("/ecommerce/ecommerce.zul");
         Menu menuP = new Menu("Project");
@@ -82,7 +76,7 @@ public class Dao {
         menuList.add(menuTable);
 
         Menu menuC = new Menu("Contact", "z-icon-envelope-o");
-        menuC.setCounter(Dao.nextInt(10, 1));
+        menuC.setCounter(Util.nextInt(10, 1));
         menuList.add(menuC);
         Menu menuF = new Menu("Freeze", "z-icon-snowflake-o");
         menuList.add(menuF);
