@@ -3,6 +3,7 @@
 @media(min-width:958px) {
     .sidebar {
         min-width: 190px;
+        line-height: normal;
     }
 }
 
