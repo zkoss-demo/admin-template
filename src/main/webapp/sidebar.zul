@@ -9,7 +9,7 @@
             </div>
             <navbar orient="vertical" collapsed="@load(vm.collapsed)">
                 <forEach items="@load(vm.menuList)">
-                    <nav label="@load(each.label)" iconSclass="@load(each.icon)" badgeText="@init(each.counter eq 0?'':each.counter)">
+                    <nav label="@load(each.label)" iconSclass="@load(each.icon)" badgeText="@load(each.counter eq 0 || vm.collapsed?'':each.counter)">
                         <forEach items="@load(each.subMenus)">
                             <navitem label="@load(each.label)" iconSclass="@load(each.icon)"
                                      onClick="@command('navigate', menu=each)"/>
