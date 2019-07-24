@@ -1,0 +1,8 @@
+<zk xmlns:n="native">
+    <panel title="Performance" border="none"
+           viewModel="@id('vm')@init('org.zkoss.admin.project.PerformanceVM')">
+        <panelchildren>
+            <charts title="" type="areaspline" onCreate="@command('init')"/>
+        </panelchildren>
+    </panel>
+</zk>

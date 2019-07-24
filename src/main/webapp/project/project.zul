@@ -1,18 +1,27 @@
 <zk xmlns:n="native">
-    <n:div sclass="row">
-        <panel title="row1">
-            <panelchildren>
-
-            content
-            </panelchildren>
-        </panel>
-    </n:div>
-    <div sclass="row">
-        row 2
-    </div>
-    <div sclass="row">
-        row 3
-    </div>
-    <div sclass="row">
-    </div>
+    <b-row>
+        <n:div class="col-12">
+            <apply templateURI="project/performance.zul"/>
+        </n:div>
+    </b-row>
+    <b-row>
+        <forEach begin="1" end="4">
+            <n:div class="col-lg-3">
+                <card/>
+            </n:div>
+        </forEach>
+    </b-row>
+    <b-row>
+        <n:div class="col">
+            <apply templateURI="project/progress.zul"/>
+        </n:div>
+    </b-row>
+    <b-row>
+        <n:div class="col-lg-8">
+            <apply templateURI="project/activity.zul"/>
+        </n:div>
+        <n:div class="col-lg-4">
+            <apply templateURI="project/todo.zul"/>
+        </n:div>
+    </b-row>
 </zk>
