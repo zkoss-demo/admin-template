@@ -2,7 +2,7 @@
     <idspace>
     <panel title="Product Import" border="normal" viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.ProductImportVM')">
         <panelchildren>
-            <charts id="chart" type="column"/>
+            <charts id="chart" type="column" title=""/>
         </panelchildren>
     </panel>
     </idspace>

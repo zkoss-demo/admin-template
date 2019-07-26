@@ -2,7 +2,7 @@
     <idspace>
     <panel title="Market Share" border="normal" viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.MarketshareVM')">
         <panelchildren>
-            <charts id="chart" type="pie"/>
+            <charts id="chart" type="pie" title=""/>
         </panelchildren>
     </panel>
     </idspace>

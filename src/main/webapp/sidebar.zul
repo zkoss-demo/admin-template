@@ -2,7 +2,7 @@
     <nodom viewModel="@id('vm')@init('org.zkoss.admin.SidebarVM')">
         <div sclass="sidebar">
             <div height="84px" sclass="user-logo text-center">
-                <image src="/resources/image/zklogo.png" width="30px" sclass="rounded"/>
+                <image src="/resources/image/zklogo-icon.svg" width="30px" sclass="rounded"/>
                 <if test="@load(not vm.collapsed)">
                     <label value="@init(vm.userName)"/>
                 </if>
