@@ -11,9 +11,10 @@ public class Dao {
     static String line = "Send payment today,Post Banner on official website, Meeting with BD team, Setting Github repository, Calling manager, Book flight for business trip";
     static String[] todoList = line.split(", ");
     static List<Activity> activityList = new LinkedList<>();
+    static List<Activity> progressList = new LinkedList<>();
 
-    static String[] NAMES = {"Matthew", "Lucas", "John", "Peter"};
-    static String[] TASKS = {"draft design", "study GDPR", "release product", "layout pages"};
+    static String[] NAMES = {"Matthew", "Lucas", "John", "Peter", "Eric", "Kevin", "Grace", "Paul"};
+    static String[] TASKS = {"draft design", "study GDPR", "release product", "layout pages", "main page", "help others", "packaging products"};
     static String[] PROJECTS = {"MedicalPro", "Real Home", "Digital Agency", "Elite Force"};
 
     static{
@@ -25,13 +26,21 @@ public class Dao {
             tasks[i] = Util.nextInt(50, 0);
         }
 
-        for (int i = 0 ; i < NAMES.length ; i++) {
+        for (int i = 0 ; i < 4 ; i++) {
             Activity activity = new Activity();
             activity.setOwner(NAMES[i]);
             activity.setTask(TASKS[i]);
             activity.setProject(PROJECTS[i]);
             activity.setCompletedTime(toDate(LocalDateTime.now().minusDays(Util.nextInt(10, 1))));
             activityList.add(activity);
+        }
+        for (int i = 0 ; i < 5 ; i++) {
+            Activity activity = new Activity();
+            activity.setOwner(NAMES[i]);
+            activity.setTask(TASKS[i]);
+            activity.setProject(PROJECTS[i % PROJECTS.length]);
+            activity.setDueDate(toDate(LocalDateTime.now().plusDays(Util.nextInt(10, 1))));
+            progressList.add(activity);
         }
     }
 
@@ -53,5 +62,9 @@ public class Dao {
 
     public static List<Activity> getActivityList() {
         return activityList;
+    }
+
+    public static List<Activity> getProgressList() {
+        return progressList;
     }
 }

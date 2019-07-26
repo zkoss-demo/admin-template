@@ -1,0 +1,52 @@
+<zk xmlns:n="native">
+    <tabbox viewModel="@id('vm')@init('org.zkoss.admin.project.ProgressVM')">
+        <tabs>
+            <tab label="On Hold" width="33%"/>
+            <tab label="In Progress" width="33%"/>
+            <tab label="Outdated" width="33%"/>
+        </tabs>
+        <tabpanels>
+            <tabpanel>
+                <forEach items="@init(vm.progressList)">
+                    <bs-row>
+                        <n:div sclass="col-2">
+                        <vlayout>
+                            <n:span class="z-label text-black-50">Status</n:span>
+                            <listbox mold="select" hflex="1" style="display:block" model="@init(vm.statusModel)"
+                                     selectedItem="@init(each.status)" disabled="true"/>
+                        </vlayout>
+                        </n:div>
+                        <n:div sclass="col-2">
+                            <vlayout>
+                                <n:span class="z-label text-black-50">Task</n:span>
+                                ${each.task}
+                            </vlayout>
+                        </n:div>
+                        <n:div sclass="col-3">
+                            <vlayout>
+                                <n:span class="z-label text-black-50">Owner</n:span>
+                                ${each.owner}
+                            </vlayout>
+                        </n:div>
+                        <n:div sclass="col-3">
+                            <vlayout>
+                                <n:span class="z-label text-black-50">Due Date</n:span>
+                                ${each.dueDate}
+                            </vlayout>
+                        </n:div>
+                        <n:div sclass="col-2 text-right">
+                            <button iconSclass="z-icon-trash-o" hflex="min" vflex="1"/>
+                            <button iconSclass="z-icon-volume-down" hflex="min" vflex="1"/>
+                        </n:div>
+                    </bs-row>
+                </forEach>
+            </tabpanel>
+            <tabpanel>
+                no data
+            </tabpanel>
+            <tabpanel>
+                no data
+            </tabpanel>
+        </tabpanels>
+    </tabbox>
+</zk>

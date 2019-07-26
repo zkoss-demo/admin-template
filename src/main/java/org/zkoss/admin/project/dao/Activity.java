@@ -7,7 +7,8 @@ public class Activity {
     private String task;
     private String project;
     private Date completedTime;
-
+    private Status status = Status.HOLD;
+    private Date dueDate;
 
     public String getOwner() {
         return owner;
@@ -39,5 +40,21 @@ public class Activity {
 
     public void setCompletedTime(Date completedTime) {
         this.completedTime = completedTime;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
+    public Date getDueDate() {
+        return dueDate;
+    }
+
+    public void setDueDate(Date dueDate) {
+        this.dueDate = dueDate;
     }
 }
