@@ -11,7 +11,7 @@ public class SaleVM {
 
     @Init
     public void init(){
-        productList = Dao.queryProduct();
+        productList = EcommerceDao.queryProduct();
     }
 
     public List<Product> getProductList() {

@@ -8,7 +8,7 @@ import java.util.*;
 /**
  * Data access object
  */
-public class Dao {
+public class EcommerceDao {
     private static CategoryModel revenueModel;
     private static CategoryModel productImportModel;
     private static List<Product> productList = new LinkedList<>();

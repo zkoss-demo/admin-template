@@ -1,6 +1,6 @@
 package org.zkoss.admin.ecommerce;
 
-import org.zkoss.admin.ecommerce.dao.Dao;
+import org.zkoss.admin.ecommerce.dao.EcommerceDao;
 import org.zkoss.admin.util.*;
 import org.zkoss.bind.annotation.*;
 import org.zkoss.chart.*;
@@ -17,7 +17,7 @@ public class RevenueVM {
     public void afterCompose(@ContextParam(ContextType.VIEW) Component view) {
         Selectors.wireComponents(view, this, false);
 
-        chart.setModel(Dao.getRevenueModel());
+        chart.setModel(EcommerceDao.getRevenueModel());
 
         chart.getTitle().setX(-20);
         chart.getSubtitle().setX(-20);

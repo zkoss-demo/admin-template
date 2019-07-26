@@ -21,7 +21,7 @@ public class MarketshareVM {
     public void afterCompose(@ContextParam(ContextType.VIEW) Component view) {
         Selectors.wireComponents(view, this, false);
 
-        productList = Dao.queryProduct();
+        productList = EcommerceDao.queryProduct();
         chart.getPlotOptions().getPie().setShadow(false);
         chart.getPlotOptions().getPie().setCenter("50%", "50%");
         initSeries();

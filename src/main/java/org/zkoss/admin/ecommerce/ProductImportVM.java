@@ -1,6 +1,6 @@
 package org.zkoss.admin.ecommerce;
 
-import org.zkoss.admin.ecommerce.dao.Dao;
+import org.zkoss.admin.ecommerce.dao.EcommerceDao;
 import org.zkoss.admin.util.Util;
 import org.zkoss.bind.annotation.*;
 import org.zkoss.chart.*;
@@ -20,7 +20,7 @@ public class ProductImportVM {
     }
 
     private void initChartModel() {
-        chart.setModel(Dao.getProductImportData());
+        chart.setModel(EcommerceDao.getProductImportData());
 
         chart.getXAxis().setCrosshair(true);
 

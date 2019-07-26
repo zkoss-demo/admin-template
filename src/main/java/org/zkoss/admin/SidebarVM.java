@@ -17,7 +17,7 @@ public class SidebarVM {
     @Init
     public void init(@ScopeParam(NAVIGATION)NavigationMdel navModel){
         navigationModel = navModel;
-        menuList = Dao.queryMenu();
+        menuList = EcommerceDao.queryMenu();
     }
 
     @Command
