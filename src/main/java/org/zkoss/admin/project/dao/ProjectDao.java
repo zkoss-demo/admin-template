@@ -5,7 +5,7 @@ import org.zkoss.admin.util.Util;
 import java.time.*;
 import java.util.*;
 
-public class Dao {
+public class ProjectDao {
     static Integer[] issues = new Integer[Util.MONTHS.length];
     static Integer[] tasks = new Integer[Util.MONTHS.length];
     static String line = "Send payment today,Post Banner on official website, Meeting with BD team, Setting Github repository, Calling manager, Book flight for business trip";
