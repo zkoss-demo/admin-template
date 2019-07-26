@@ -1,7 +1,7 @@
 <nodom xmlns:n="native" viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.EcommerceVM')">
     <bs-row>
         <n:div sclass="col px-1">
-            <n:span class="font-weight-bold">Ecommerce Dashboard</n:span>
+            <n:span class="z-label font-weight-bold">Ecommerce Dashboard</n:span>
         </n:div>
     </bs-row>
     <bs-row>
