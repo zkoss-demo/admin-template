@@ -1,26 +1,26 @@
 <zk xmlns:n="native">
     <b-row>
-        <n:div class="col-12">
+        <n:div class="col-12 px-1 py-1">
             <apply templateURI="project/performance.zul"/>
         </n:div>
     </b-row>
     <b-row>
         <forEach begin="1" end="4">
-            <n:div class="col-lg-3">
+            <n:div class="col-lg-3 px-1 py-1">
                 <card/>
             </n:div>
         </forEach>
     </b-row>
     <b-row>
-        <n:div class="col">
+        <n:div class="col px-1 py-1">
             <apply templateURI="project/progress.zul"/>
         </n:div>
     </b-row>
     <b-row>
-        <n:div class="col-lg-8">
+        <n:div class="col-lg-8 px-1 py-1">
             <apply templateURI="project/activity.zul"/>
         </n:div>
-        <n:div class="col-lg-4">
+        <n:div class="col-lg-4 px-1 py-1">
             <apply templateURI="project/todo.zul"/>
         </n:div>
     </b-row>

@@ -12,7 +12,7 @@
 		<extends>div</extends>
 		<property>
 			<property-name>sclass</property-name>
-			<property-value>row py-md-2</property-value>
+			<property-value>row py-1</property-value>
 		</property>
 	</component>
 	<stylesheet href="/resources/css/state-box.css" type="text/css"/>
