@@ -49,3 +49,5 @@ visit [http://localhost:8080](http://localhost:8080/admin-template)
 * Opera 36
 * Safari
 * All mobile browsers
+
+* since this project uses [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties).
