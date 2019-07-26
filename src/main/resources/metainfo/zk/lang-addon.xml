@@ -8,7 +8,7 @@
 	<!-- https://www.zkoss.org/wiki/ZK_Client-side_Reference/Language_Definition/component -->
 	<!--bootstrap row-->
 	<component>
-		<component-name>b-row</component-name>
+		<component-name>bs-row</component-name>
 		<extends>div</extends>
 		<property>
 			<property-name>sclass</property-name>

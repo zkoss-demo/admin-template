@@ -1,7 +1,7 @@
 <panel xmlns:n="native" title="Monthly Revenue Report" border="normal"
        viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.RevenueVM')">
     <panelchildren>
-        <b-row>
+        <bs-row>
             <n:div class="col-lg-1">
                 From
             </n:div>
@@ -20,12 +20,12 @@
             <n:div class="col-lg-5 text-right">
                 <button label="View Statements" />
             </n:div>
-        </b-row>
-        <b-row>
+        </bs-row>
+        <bs-row>
             <n:div class="col-12">
-                <charts id="chart" type="line" title="Revenue Report" />
+                <charts id="chart" type="line" title="" />
             </n:div>
-        </b-row>
+        </bs-row>
 
     </panelchildren>
 </panel>

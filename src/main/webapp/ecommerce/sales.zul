@@ -18,7 +18,7 @@
         </vlayout>
     </template>
     <template name="progress">
-        <b-row >
+        <bs-row >
             <n:div class="col-lg-3 text-break">
                 <n:small>${name}</n:small>
             </n:div>
@@ -28,6 +28,6 @@
             <n:div class="col-lg-3 text-secondary">
                 <n:small>${sale}</n:small>
             </n:div>
-        </b-row>
+        </bs-row>
     </template>
 </zk>
