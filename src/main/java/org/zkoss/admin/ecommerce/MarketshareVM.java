@@ -1,6 +1,7 @@
 package org.zkoss.admin.ecommerce;
 
 import org.zkoss.admin.ecommerce.dao.*;
+import org.zkoss.admin.util.*;
 import org.zkoss.bind.annotation.*;
 import org.zkoss.chart.*;
 import org.zkoss.chart.plotOptions.*;
@@ -39,6 +40,7 @@ public class MarketshareVM {
             productMarketShare.getDataLabels().setEnabled(false);
             marketShare.addPoint(productMarketShare);
             i += 1;
+            productMarketShare.setColor(BsColor.getColor(i).getHexCode());
         }
         PiePlotOptions plotOptions = new PiePlotOptions();
         plotOptions.setShowInLegend(true);

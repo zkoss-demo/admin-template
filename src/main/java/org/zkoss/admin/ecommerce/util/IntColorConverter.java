@@ -1,6 +1,7 @@
 package org.zkoss.admin.ecommerce.util;
 
 
+import org.zkoss.admin.util.BsColor;
 import org.zkoss.bind.*;
 import org.zkoss.zk.ui.Component;
 
@@ -10,11 +11,10 @@ import java.util.*;
  * Convert integer to a bootstrap color
  */
 public class IntColorConverter implements Converter<String, Integer, Component> {
-    static private String COLORS[] = {"primary", "warning", "danger", "success"};
 
     @Override
     public String coerceToUi(Integer index, Component component, BindContext bindContext) {
-        return COLORS[index % COLORS.length];
+        return BsColor.values()[index % BsColor.values().length].getCssClass();
     }
 
     @Override
