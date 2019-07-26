@@ -1,0 +1,8 @@
+.infoBox{
+    border-width: 5px 1px 1px 1px;
+    border-top-color: var(--bs-color);
+    border-right-color: #d9d9d9;
+    border-bottom-color: #d9d9d9;
+    border-left-color: #d9d9d9;
+    border-style: solid;
+}
