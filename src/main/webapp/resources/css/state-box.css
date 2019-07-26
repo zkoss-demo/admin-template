@@ -2,23 +2,3 @@
     border-left: 5px solid;
     height: 115px;
 }
-.state-box .info{
-    display: inline-block;
-}
-.state-box .info .title{
-    font-size: 16px;
-    color: #c5c5c5;
-}
-
-.state-box .info .value{
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.state-box .info .percentage{
-    font-size: 12px;
-}
-.state-box .icon{
-    display: inline-block;
-    color: #c5c5c5;
-}
