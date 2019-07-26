@@ -2,7 +2,7 @@
     <n:div class="state-box rounded p-1 ${color}">
         <n:div class="row w-100">
             <n:div class="col-8 info px-4">
-                <n:div class="text-black-50">${state.type}</n:div>
+                <n:h6 class="text-black-50">${state.type}</n:h6>
                 <n:h4>${state.value}</n:h4>
                 <label sclass="text-success" value="@init(state.ratio)@converter('org.zkoss.admin.ecommerce.util.PercentageConverter')"/>
             </n:div>

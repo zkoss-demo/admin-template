@@ -23,6 +23,10 @@
 
 /** make font consistent with ZK
 */
-.highcharts-legend-item text{
+.highcharts-legend-item >text{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.container-fluid{
+    background-color: #f9fcff;
 }
