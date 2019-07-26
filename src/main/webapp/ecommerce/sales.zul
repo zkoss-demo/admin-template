@@ -7,7 +7,7 @@
             </div>
             <forEach items="@init(vm.productList)">
                 <apply template="progress" name="@init(each.name)" percentage="@init(each.amount/100)" sale="@init(each.amount)"
-                       sclass="@init(forEachStatus.index)@converter('org.zkoss.admin.ecommerce.util.IntColorConverter')"/>
+                       sclass="@init(forEachStatus.index)@converter('org.zkoss.admin.ecommerce.converter.IntColorConverter')"/>
             </forEach>
         </panelchildren>
     </panel>

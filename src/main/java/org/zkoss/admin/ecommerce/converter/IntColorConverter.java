@@ -1,11 +1,9 @@
-package org.zkoss.admin.ecommerce.util;
+package org.zkoss.admin.ecommerce.converter;
 
 
 import org.zkoss.admin.util.BsColor;
 import org.zkoss.bind.*;
 import org.zkoss.zk.ui.Component;
-
-import java.util.*;
 
 /**
  * Convert integer to a bootstrap color

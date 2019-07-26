@@ -1,4 +1,4 @@
-package org.zkoss.admin.ecommerce.util;
+package org.zkoss.admin.ecommerce.converter;
 
 
 import org.zkoss.bind.*;
