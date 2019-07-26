@@ -20,3 +20,9 @@
 .user-logo {
     padding: 20px 0;
 }
+
+/** make font consistent with ZK
+*/
+.highcharts-legend-item text{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}

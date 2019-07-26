@@ -8,7 +8,7 @@
             </n:div>
             <n:div class="col-4 text-right px-3">
                 <n:h2>
-                <n:i class="${icon} text-black-50"/>
+                <n:i class="${icon} text-black-50 h3"/>
                 </n:h2>
             </n:div>
         </n:div>
