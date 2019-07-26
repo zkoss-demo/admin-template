@@ -3,40 +3,40 @@
  * https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
  */
 .primary {
-    --bg-color: var(--primary);
+    --bs-color: var(--primary);
 }
 
 .secondary {
-    --bg-color: var(--secondary);
+    --bs-color: var(--secondary);
 }
 
 .success {
-    --bg-color: var(--success);
+    --bs-color: var(--success);
 }
 
 .danger {
-    --bg-color: var(--danger);
+    --bs-color: var(--danger);
 }
 
 .warning{
-    --bg-color: var(--warning);
+    --bs-color: var(--warning);
 }
 
 .info{
-    --bg-color: var(--info);
+    --bs-color: var(--info);
 }
 
 .light{
-    --bg-color: var(--light);
+    --bs-color: var(--light);
 }
 
 .dark{
-    --bg-color: var(--dark);
+    --bs-color: var(--dark);
 }
 
 
 
 /* apply to zk components differently */
 .z-progressmeter-image {
-    background-color: var(--bg-color);
+    background-color: var(--bs-color);
 }

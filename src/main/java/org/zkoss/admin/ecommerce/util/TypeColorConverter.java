@@ -2,6 +2,7 @@ package org.zkoss.admin.ecommerce.util;
 
 
 import org.zkoss.admin.ecommerce.dao.Type;
+import org.zkoss.admin.util.BsColor;
 import org.zkoss.bind.*;
 import org.zkoss.zk.ui.Component;
 
@@ -12,10 +13,10 @@ import java.util.*;
  */
 public class TypeColorConverter implements Converter<String, Type, Component> {
     static private Map<Type, String> borderColorMap = new HashMap() {{
-        put(Type.Customer, "border-primary");
-        put(Type.Order, "border-warning");
-        put(Type.Task, "border-danger");
-        put(Type.Request, "border-success");
+        put(Type.Customer, BsColor.PRIMARY.getCssClass());
+        put(Type.Order, BsColor.WARNING.getCssClass());
+        put(Type.Task, BsColor.DANGER.getCssClass());
+        put(Type.Request, BsColor.SUCCESS.getCssClass());
     }};
 
     @Override
