@@ -8,7 +8,7 @@ public class ProgressVM {
     private ListModelList<Status> statusModel = new ListModelList<>(Status.values());
 
     public ProgressVM(){
-        progressList = new ListModelList<>(ProjectDao.getProgressList());
+        progressList = new ListModelList<>(ProjectDao.getActivityList());
     }
 
     public ListModelList<Activity> getProgressList() {

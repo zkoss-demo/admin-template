@@ -7,7 +7,7 @@ public class ActivityVM {
     private ListModelList<Activity> activityList;
 
     public ActivityVM(){
-        activityList = new ListModelList<>(ProjectDao.getActivityList());
+        activityList = new ListModelList<>(ProjectDao.getRecentActivityList());
     }
 
     public ListModelList<Activity> getActivityList() {
