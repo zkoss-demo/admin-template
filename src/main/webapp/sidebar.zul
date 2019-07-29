@@ -23,6 +23,7 @@
         </nav>
     </template>
     <template name="menuitem">
-        <navitem label="@load(menuItem.label)" iconSclass="@load(menuItem.icon)" onClick="@command('navigate', menu=each)"/>
+        <navitem label="@load(menuItem.label)" iconSclass="@load(menuItem.icon)" onClick="@command('navigate', menu=each)"
+                 selected="@load(vm.navigationModel.contentUrl eq menuItem.path)"/>
     </template>
 </zk>

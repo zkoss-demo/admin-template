@@ -54,4 +54,8 @@ public class SidebarVM {
     public void setCollapsed(boolean collapsed) {
         this.collapsed = collapsed;
     }
+
+    public NavigationMdel getNavigationModel() {
+        return navigationModel;
+    }
 }
