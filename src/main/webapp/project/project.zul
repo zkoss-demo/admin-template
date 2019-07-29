@@ -4,10 +4,10 @@
             <apply templateURI="project/performance.zul"/>
         </n:div>
     </bs-row>
-    <bs-row>
-        <forEach begin="1" end="4">
+    <bs-row viewModel="@id('vm')@init('org.zkoss.admin.project.ProgressSummaryVM')">
+        <forEach items="@init(vm.progressSummary)" >
             <n:div class="col-lg-3 px-1 py-1">
-                <card/>
+                <card color="@init(forEachStatus.index)@converter('org.zkoss.admin.ecommerce.converter.IntColorConverter')"/>
             </n:div>
         </forEach>
     </bs-row>

@@ -9,7 +9,7 @@ public class Util {
     public static Random random = new Random();
     public static String[] MONTHS = new DateFormatSymbols().getMonths();
 
-    public static int nextInt(int high, int low){
+    public static int nextInt(int low, int high){
         return random.nextInt(high-low) + low;
     }
 

@@ -31,7 +31,7 @@ public class EcommerceDao {
 
         for (String name : PRODUCT_NAMES) {
             Product product = new Product(name);
-            product.setQuantity(Util.nextInt(100, 20));
+            product.setQuantity(Util.nextInt(20, 100));
             product.setPrice(Util.random.nextInt(1000) / 10);
             productList.add(product);
         }
@@ -57,7 +57,7 @@ public class EcommerceDao {
 
     static public void initMenus(){
         Menu menuD = new Menu("Dashboard", "z-icon-home");
-        menuD.setCounter(Util.nextInt(10, 1));
+        menuD.setCounter(Util.nextInt(1, 10));
         Menu menuE = new Menu("Ecommerce");
         menuE.setPath("/ecommerce/ecommerce.zul");
         Menu menuP = new Menu("Project");
@@ -76,7 +76,7 @@ public class EcommerceDao {
         menuList.add(menuTable);
 
         Menu menuC = new Menu("Contact", "z-icon-envelope-o");
-        menuC.setCounter(Util.nextInt(10, 1));
+        menuC.setCounter(Util.nextInt(1, 10));
         menuList.add(menuC);
         Menu menuF = new Menu("Freeze", "z-icon-snowflake-o");
         menuList.add(menuF);

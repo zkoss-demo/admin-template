@@ -1,19 +1,19 @@
 <zk xmlns:n="native">
     <n:div class="infoBox rounded p-1 ${color}">
         <n:div class="row mx-1">
-            <n:span class="z-label text-black-50">this week</n:span>
+            <n:span class="z-label text-black-50">${each.title}</n:span>
         </n:div>
         <n:div class="row mx-1 my-2">
             <n:div class="col-12 h3 text-center">
-                ${each.counter}
+                ${each.incompleted}
             </n:div>
             <n:div class="col-12 text-center">
-                Due task
+                ${each.topic}
             </n:div>
         </n:div>
         <n:div class="row mx-1 ">
             <n:div class="col-12 text-center border-top">
-                <n:span class="z-label text-black-50">completed</n:span>
+                <n:span class="z-label text-black-50">completed: ${each.completed}</n:span>
             </n:div>
         </n:div>
     </n:div>
