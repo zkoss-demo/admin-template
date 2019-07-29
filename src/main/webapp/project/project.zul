@@ -1,5 +1,10 @@
 <zk xmlns:n="native">
     <bs-row>
+        <n:div sclass="col-12 px-1">
+            <n:span class="z-label font-weight-bold">Project Dashboard</n:span>
+        </n:div>
+    </bs-row>
+    <bs-row>
         <n:div class="col-12 px-1 py-1">
             <apply templateURI="project/performance.zul"/>
         </n:div>
@@ -12,7 +17,7 @@
         </forEach>
     </bs-row>
     <bs-row>
-        <n:div class="col px-1 py-1">
+        <n:div class="col-12 px-1 py-1">
             <apply templateURI="project/progress.zul"/>
         </n:div>
     </bs-row>
