@@ -11,7 +11,7 @@
     </bs-row>
     <bs-row viewModel="@id('vm')@init('org.zkoss.admin.project.ProgressSummaryVM')">
         <forEach items="@init(vm.progressSummary)" >
-            <n:div class="col-lg-3 px-1 py-1">
+            <n:div class="col-12 col-md-6 col-lg-3 px-1 py-1">
                 <card color="@init(forEachStatus.index)@converter('org.zkoss.admin.ecommerce.converter.IntColorConverter')"/>
             </n:div>
         </forEach>
