@@ -1,29 +1,29 @@
 <zk xmlns:n="native" xmlns="http://www.zkoss.org/2005/zul">
-    <nodom viewModel="@id('vm')@init('org.zkoss.admin.SidebarVM')">
-        <div sclass="sidebar">
-            <div height="84px" sclass="user-logo text-center">
-                <image src="/resources/image/zklogo-icon.svg" width="30px" sclass="rounded"/>
-                <if test="@load(not vm.collapsed)">
-                    <label value="@init(vm.userName)"/>
-                </if>
-            </div>
-            <navbar orient="vertical" collapsed="@load(vm.collapsed)">
-                <apply template="iterate" menuItems="@load(vm.menuList)"/>
-            </navbar>
+    <div sclass="sidebar"  viewModel="@id('vm')@init('org.zkoss.admin.SidebarVM')">
+        <div height="84px" sclass="user-logo text-center">
+            <image src="/resources/image/zklogo-icon.svg" width="30px" sclass="rounded"/>
+            <if test="@load(not vm.collapsed)">
+                <label value="@init(vm.userName)"/>
+            </if>
         </div>
-    </nodom>
+        <navbar orient="vertical" collapsed="@load(vm.collapsed)">
+            <apply template="iterate" menuItems="@load(vm.menuList)"/>
+        </navbar>
+    </div>
     <template name="iterate">
         <forEach items="@load(menuItems)">
             <apply template="@load(empty each.subMenus?'menuitem':'menu')" menuItem="@load(each)"/>
         </forEach>
     </template>
     <template name="menu">
-        <nav label="@load(menuItem.label)" iconSclass="@load(menuItem.icon)" badgeText="@load(vm.collapsed ? '': menuItem.counter)">
+        <nav label="@load(menuItem.label)" iconSclass="@load(menuItem.icon)"
+             badgeText="@load(vm.collapsed ? '': menuItem.counter)">
             <apply template="iterate" menuItems="@load(menuItem.subMenus)"/>
         </nav>
     </template>
     <template name="menuitem">
-        <navitem label="@load(menuItem.label)" iconSclass="@load(menuItem.icon)" onClick="@command('navigate', menu=each)"
+        <navitem label="@load(menuItem.label)" iconSclass="@load(menuItem.icon)"
+                 onClick="@command('navigate', menu=each)"
                  selected="@load(vm.navigationModel.contentUrl eq menuItem.path)"/>
     </template>
 </zk>
