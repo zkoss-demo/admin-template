@@ -2,14 +2,14 @@
 
 @media(min-width:958px) {
     .sidebar {
-        min-width: 190px;
         line-height: normal;
+        flex-basis: 190px;
     }
 }
 
 @media(max-width:957px) {
     .sidebar {
-        min-width: 55px;
+        flex-basis: 55px;
     }
     /* make navbar border fill the complete width */
     .z-navbar-vertical{
@@ -29,4 +29,6 @@
 
 .container-fluid{
     background-color: #f9fcff;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
