@@ -1,5 +1,7 @@
-<zk>
+<zk xmlns:n="native">
     <bs-row>
-        under construction.
+        <n:div sclass="col px-1 py-1">
+            <n:span class="z-label lead">under construction.</n:span>
+        </n:div>
     </bs-row>
 </zk>
