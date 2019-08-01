@@ -33,7 +33,7 @@ public class EcommerceDao {
         for (String name : PRODUCT_NAMES) {
             Product product = new Product(name);
             product.setQuantity(Util.nextInt(20, 100));
-            product.setPrice(Util.random.nextInt(1000) / 10);
+            product.setPrice(Util.nextInt(100,1000) / 10);
             productList.add(product);
         }
 
