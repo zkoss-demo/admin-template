@@ -5,7 +5,7 @@ import org.zkoss.bind.annotation.Init;
 
 import java.util.*;
 
-public class EcommerceVM {
+public class StateVM {
     private List<State> states;
 
     @Init

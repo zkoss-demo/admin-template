@@ -1,10 +1,10 @@
-<nodom xmlns:n="native" viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.EcommerceVM')">
+<zk xmlns:n="native">
     <bs-row>
         <n:div sclass="col px-1">
             <n:span class="z-label font-weight-bold">Ecommerce Dashboard</n:span>
         </n:div>
     </bs-row>
-    <bs-row>
+    <bs-row viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.StateVM')">
         <forEach items="@init(vm.states)">
             <n:div sclass="col-12 col-md-6 col-lg-3 px-1 py-1">
                 <state-box state="@init(each)"
@@ -34,4 +34,4 @@
             <apply templateURI="ecommerce/productTable.zul"/>
         </n:div>
     </bs-row>
-</nodom>
+</zk>
