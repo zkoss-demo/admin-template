@@ -1,4 +1,4 @@
-package org.zkoss.admin.ecommerce.converter;
+package org.zkoss.admin.converter;
 
 
 import org.zkoss.admin.util.BsColor;
