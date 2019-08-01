@@ -18,7 +18,7 @@
         </vlayout>
     </template>
     <template name="progress">
-        <bs-row >
+        <bs-row vflex="1">
             <n:div class="col-lg-3 text-break">
                 <n:small>${name}</n:small>
             </n:div>
