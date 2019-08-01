@@ -18,6 +18,7 @@ public class PerformanceVM {
         series1.setColor(BsColor.PRIMARY.getHexCode());
         series1.setName("Issues");
         chart.getPlotOptions().getAreaSpline().setFillOpacity(0.1);
+        chart.getPlotOptions().getAreaSpline().getMarker().setEnabled(false);
         series1.setData(ProjectDao.queryIssues());
         Series series2 = chart.getSeries(1);
         series2.setColor(BsColor.DANGER.getHexCode());

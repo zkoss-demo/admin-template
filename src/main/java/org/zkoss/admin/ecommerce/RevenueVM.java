@@ -26,8 +26,10 @@ public class RevenueVM {
         plotLine.setValue(0);
         plotLine.setWidth(1);
         plotLine.setColor("#808080");
+        chart.getPlotOptions().getAreaSpline().setFillOpacity(0.1);
+        chart.getPlotOptions().getAreaSpline().getMarker().setEnabled(false);
         chart.getYAxis().addPlotLine(plotLine);
-        chart.getTooltip().setValueSuffix("°C");
+        chart.getTooltip().setValueSuffix("$");
 
         Legend legend = chart.getLegend();
         legend.setLayout("vertical");
