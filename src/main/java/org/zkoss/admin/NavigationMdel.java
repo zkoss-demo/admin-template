@@ -1,7 +1,10 @@
 package org.zkoss.admin;
 
 public class NavigationMdel {
-    private String contentUrl = "ecommerce/ecommerce.zul";
+    public static final String DASHBOARD_ECOMMERCE_ZUL = "/ecommerce/ecommerce.zul";
+    public static final String DASHBOARD_PROJECT_ZUL = "/project/project.zul";
+
+    private String contentUrl = DASHBOARD_ECOMMERCE_ZUL;
 
     public String getContentUrl() {
         return contentUrl;

@@ -1,5 +1,6 @@
 package org.zkoss.admin.ecommerce.dao;
 
+import org.zkoss.admin.NavigationMdel;
 import org.zkoss.admin.util.Util;
 import org.zkoss.chart.model.*;
 
@@ -59,9 +60,9 @@ public class EcommerceDao {
         Menu menuD = new Menu("Dashboard", "z-icon-home");
         menuD.setCounter(Util.nextInt(1, 10));
         Menu menuE = new Menu("Ecommerce");
-        menuE.setPath("/ecommerce/ecommerce.zul");
+        menuE.setPath(NavigationMdel.DASHBOARD_ECOMMERCE_ZUL);
         Menu menuP = new Menu("Project");
-        menuP.setPath("/project/project.zul");
+        menuP.setPath(NavigationMdel.DASHBOARD_PROJECT_ZUL);
         List<Menu> subMenus = new ArrayList<>();
         subMenus.add(menuE);
         subMenus.add(menuP);
