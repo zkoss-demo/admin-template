@@ -1,5 +1,5 @@
 <zk xmlns:n="native">
-    <panel title="Product Sales" border="normal" viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.SaleVM')">
+    <panel title="Product Sales" border="normal" viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.SaleVM')" height="100%">
         <panelchildren>
             <div>
                 <apply template="price-mark" sclass="" title="This Week" price="$5,171"/>

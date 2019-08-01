@@ -1,5 +1,5 @@
-<panel xmlns:n="native" title="Monthly Revenue Report" border="normal"
-       viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.RevenueVM')">
+<panel xmlns:n="native" title="Monthly Revenue Report" border="normal" height="100%"
+       viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.RevenueVM')" >
     <panelchildren>
         <bs-row>
             <n:div class="col-lg-1">
@@ -23,7 +23,7 @@
         </bs-row>
         <bs-row>
             <n:div class="col-12">
-                <charts id="chart" type="line" title="" />
+                <charts id="chart" type="areaspline" title="" hflex="1"/>
             </n:div>
         </bs-row>
 

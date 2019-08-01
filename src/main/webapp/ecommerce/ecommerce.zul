@@ -13,7 +13,7 @@
             </n:div>
         </forEach>
     </bs-row>
-    <bs-row>
+    <bs-row style="min-height: 500px">
         <n:div sclass="col-md-7 px-1 py-1">
             <apply templateURI="ecommerce/revenueReport.zul"/>
         </n:div>
