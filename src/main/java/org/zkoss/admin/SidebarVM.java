@@ -1,6 +1,6 @@
 package org.zkoss.admin;
 
-import org.zkoss.admin.ecommerce.dao.*;
+import org.zkoss.admin.navigation.*;
 import org.zkoss.bind.BindUtils;
 import org.zkoss.bind.annotation.*;
 
@@ -17,7 +17,7 @@ public class SidebarVM {
     @Init
     public void init(@ScopeParam(NAVIGATION)NavigationMdel navModel){
         navigationModel = navModel;
-        menuList = EcommerceDao.queryMenu();
+        menuList = NavDao.queryMenu();
     }
 
     @Command

@@ -1,6 +1,7 @@
 package org.zkoss.admin.ecommerce.dao;
 
-import org.zkoss.admin.NavigationMdel;
+import org.zkoss.admin.navigation.NavigationMdel;
+import org.zkoss.admin.navigation.Menu;
 import org.zkoss.admin.util.Util;
 import org.zkoss.chart.model.*;
 
@@ -13,7 +14,6 @@ public class EcommerceDao {
     private static CategoryModel revenueModel;
     private static CategoryModel productImportModel;
     private static List<Product> productList = new LinkedList<>();
-    private static List<Menu> menuList = new LinkedList<>();
 
     public static String[] PRODUCT_NAMES = {"Charts", "Framework", "Theme Pack", "Spreadsheet", "Calendar", "Pivot Table"};
 
@@ -36,8 +36,6 @@ public class EcommerceDao {
             product.setPrice(Util.nextInt(100,1000) / 10);
             productList.add(product);
         }
-
-        initMenus();
     }
 
     static public CategoryModel getRevenueModel() {
@@ -50,38 +48,5 @@ public class EcommerceDao {
 
     public static ChartsModel getProductImportData() {
         return productImportModel;
-    }
-
-    static public List<Menu> queryMenu(){
-        return menuList;
-    }
-
-    static public void initMenus(){
-        Menu menuD = new Menu("Dashboard", "z-icon-home");
-        menuD.setCounter(Util.nextInt(1, 10));
-        Menu menuE = new Menu("Ecommerce");
-        menuE.setPath(NavigationMdel.DASHBOARD_ECOMMERCE_ZUL);
-        Menu menuP = new Menu("Project");
-        menuP.setPath(NavigationMdel.DASHBOARD_PROJECT_ZUL);
-        List<Menu> subMenus = new ArrayList<>();
-        subMenus.add(menuE);
-        subMenus.add(menuP);
-        menuD.setSubMenus(subMenus);
-        menuList.add(menuD);
-
-        Menu menuT = new Menu("Typography", "z-icon-flag-o");
-        menuList.add(menuT);
-        Menu menuUI = new Menu("UI Elements", "z-icon-flag-o");
-        menuList.add(menuUI);
-        Menu menuTable = new Menu("Tables", "z-icon-flag-o");
-        menuList.add(menuTable);
-
-        Menu menuC = new Menu("Contact", "z-icon-envelope-o");
-        menuC.setCounter(Util.nextInt(1, 10));
-        menuList.add(menuC);
-        Menu menuF = new Menu("Freeze", "z-icon-snowflake-o");
-        menuList.add(menuF);
-        Menu menuL = new Menu("Logout", "z-icon-power-off");
-        menuList.add(menuL);
     }
 }

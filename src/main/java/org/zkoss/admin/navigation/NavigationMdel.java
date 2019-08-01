@@ -1,4 +1,4 @@
-package org.zkoss.admin;
+package org.zkoss.admin.navigation;
 
 public class NavigationMdel {
     public static final String DASHBOARD_ECOMMERCE_ZUL = "/ecommerce/ecommerce.zul";

@@ -1,5 +1,6 @@
 package org.zkoss.admin;
 
+import org.zkoss.admin.navigation.NavigationMdel;
 import org.zkoss.bind.annotation.*;
 import org.zkoss.zk.ui.Desktop;
 

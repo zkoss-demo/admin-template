@@ -1,4 +1,4 @@
-package org.zkoss.admin.ecommerce.dao;
+package org.zkoss.admin.navigation;
 
 import java.util.*;
 
