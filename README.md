@@ -31,12 +31,12 @@ It includes Bootstrap with [Webjars](https://www.webjars.org/).
 
 # How to Run
 ## No Maven
-You can run the project with maven wrapper by the command below (it will automatically download required maven):
+You can run the project with gradle wrapper by the command below (it will automatically download required files):
 
 ### Linux/Mac
-`./mvnw jetty:run`
+`./gradlew appRun`
 ### Windows
-`mvnw jetty:run`
+`gradlew appRun`
 
 
 ## With Maven installed
@@ -45,7 +45,7 @@ With the command below:
 `mvn jetty:run`
 
 After the jetty started
-visit [http://localhost:8080](http://localhost:8080/admin-template)
+visit [http://localhost:8080/admin-template/](http://localhost:8080/admin-template)
 
 
 # Browser compatibility
