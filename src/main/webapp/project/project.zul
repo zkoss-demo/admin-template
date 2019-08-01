@@ -21,7 +21,7 @@
             <apply templateURI="project/progress.zul"/>
         </n:div>
     </bs-row>
-    <bs-row>
+    <bs-row style="min-height: 270px">
         <n:div class="col-lg-8 px-1 py-1">
             <apply templateURI="project/activity.zul"/>
         </n:div>
