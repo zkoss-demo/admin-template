@@ -1,9 +1,10 @@
-# This project can show you
+# ZK admin template project 
+This project can show you:
 
 * build an administration system with ZK components
 * develop with MVVM pattern
-* various usages of shadow elements
-* apply responsive design with Bootstrap and ZK
+* reusing view snippet as a template
+* easily apply responsive design (RWD) with Bootstrap
 * create a custom component with shadow elements
 
 # Screenshots
@@ -21,8 +22,9 @@
 
 ## detail
 This project integrates with the following 3rd party frameworks/resources:
-* [Bootstrap 4.3.1](https://getbootstrap.com/)
+* [Bootstrap 4.3.1](https://getbootstrap.com/). Customize color with [themestr.app](https://themestr.app/theme)
 * [Font Awesome·4.7.0.](https://fontawesome.com/v4.7.0/icons/): bundled with ZK framework (since 8.5.2)
+
 
 It includes Bootstrap with [Webjars](https://www.webjars.org/).
 
@@ -54,4 +56,4 @@ visit [http://localhost:8080](http://localhost:8080/admin-template)
 * Safari
 * All mobile browsers
 
-* since this project uses [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties).
+Since this project uses [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties).
