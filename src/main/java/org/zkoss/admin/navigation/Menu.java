@@ -6,7 +6,7 @@ public class Menu {
     private String label;
     private List<Menu> subMenus = new ArrayList<>();
     private String icon;
-    private String path = "/blank.zul";
+    private String path = NavigationMdel.BLANK_ZUL;
     private int counter;
 
     public Menu() {

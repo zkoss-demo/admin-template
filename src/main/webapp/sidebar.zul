@@ -24,6 +24,6 @@
     <template name="menuitem">
         <navitem label="@load(menuItem.label)" iconSclass="@load(menuItem.icon)"
                  onClick="@command('navigate', menu=each)"
-                 selected="@load(vm.navigationModel.contentUrl eq menuItem.path)"/>
+                 selected="@load(!(menuItem.path eq '/blank.zul') and vm.navigationModel.contentUrl eq menuItem.path)"/>
     </template>
 </zk>
