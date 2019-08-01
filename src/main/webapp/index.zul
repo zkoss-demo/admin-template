@@ -1,4 +1,5 @@
 <?link rel="stylesheet" href="webjars/bootstrap/4.3.1/css/bootstrap.min.css"?>
+<?link rel="stylesheet" href="resources/css/zk-admin.css"?>
 <?link rel="stylesheet" href="resources/css/layout.css" ?>
 <?link rel="stylesheet" href="resources/css/zk-bootstrap.css" ?>
 <zk xmlns:n="native">
