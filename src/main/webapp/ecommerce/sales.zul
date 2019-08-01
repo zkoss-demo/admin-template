@@ -22,10 +22,10 @@
             <n:div class="col-lg-3 text-break">
                 <n:small>${name}</n:small>
             </n:div>
-            <n:div class="col-lg-6">
-                <progressmeter value="${percentage}" width="100%" sclass="${sclass}"/>
+            <n:div class="col-lg-6 py-2">
+                <progressmeter value="${percentage}" width="100%" sclass="${sclass} align-bottom"/>
             </n:div>
-            <n:div class="col-lg-3 text-secondary">
+            <n:div class="col-lg-3 ">
                 <n:small>${sale}</n:small>
             </n:div>
         </bs-row>
