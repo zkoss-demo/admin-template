@@ -5,8 +5,6 @@
 	<artifactId>admin-template</artifactId>
 	<version>8.6.2-Eval</version>
 	<properties>
-		<maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
-		<packname>-${project.version}-FL-${maven.build.timestamp}</packname>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
@@ -28,21 +26,10 @@
 		</repository>
 		<repository>
 			<id>ZK EVAL</id>
-      		<name>ZK Evaluation Repository</name>
+			<name>ZK Evaluation Repository</name>
 			<url>http://mavensync.zkoss.org/eval</url>
 		</repository>
-		<repository>
-			<id>ZK EE</id>
-			<url>https://maven.zkoss.org/repo/zk/ee</url>
-		</repository>
 	</repositories>
-	<pluginRepositories>
-		<pluginRepository>
-			<id>zkmaven</id>
-			<name>ZK Maven Plugin Repository</name>
-			<url>http://mavensync.zkoss.org/maven2/</url>
-		</pluginRepository>
-	</pluginRepositories>
 	<dependencies>
 		<dependency>
 			<groupId>org.zkoss.zk</groupId>

@@ -7,8 +7,7 @@ group = "org.zkoss"
 version = "1.0-SNAPSHOT"
 
 gretty {
-    servletContainer = "jetty9.3"
-    jvmArgs = listOf("-Xmx2g")
+    servletContainer = "jetty9.4"
 }
 
 repositories {
