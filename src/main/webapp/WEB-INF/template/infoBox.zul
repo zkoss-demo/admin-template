@@ -1,20 +1,20 @@
-<zk xmlns:n="native">
-    <n:div class="infoBox rounded p-1 ${color}">
-        <n:div class="row mx-1">
-            <n:span class="z-label text-black-50">${each.title}</n:span>
-        </n:div>
-        <n:div class="row mx-1 my-2">
-            <n:div class="col-12 h3 text-center">
+<zk xmlns="native">
+    <div class="infoBox rounded p-1 ${color}">
+        <div class="row mx-1">
+            <span class="z-label text-black-50">${each.title}</span>
+        </div>
+        <div class="row mx-1 my-2">
+            <div class="col-12 h3 text-center">
                 ${each.incompleted}
-            </n:div>
-            <n:div class="col-12 text-center">
+            </div>
+            <div class="col-12 text-center">
                 ${each.topic}
-            </n:div>
-        </n:div>
-        <n:div class="row mx-1 ">
-            <n:div class="col-12 text-center border-top">
-                <n:span class="z-label text-black-50">completed: ${each.completed}</n:span>
-            </n:div>
-        </n:div>
-    </n:div>
+            </div>
+        </div>
+        <div class="row mx-1 ">
+            <div class="col-12 text-center border-top">
+                <span class="z-label text-black-50">completed: ${each.completed}</span>
+            </div>
+        </div>
+    </div>
 </zk>
