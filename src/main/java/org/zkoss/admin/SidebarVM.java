@@ -22,8 +22,11 @@ public class SidebarVM {
 
     @Command
     public void navigate(@BindingParam("menu")Menu menu){
-        navigationModel.setContentUrl(menu.getPath());
-        BindUtils.postNotifyChange(null, null, navigationModel, "contentUrl");
+        String targetPath = menu.getPath();
+        if (!targetPath.equals(NavigationMdel.BLANK_ZUL)) {
+            navigationModel.setContentUrl(targetPath);
+            BindUtils.postNotifyChange(null, null, navigationModel, "contentUrl");
+        }
     }
 
     // medium breakpoint 768 + 190 (sidebar width)
