@@ -22,7 +22,7 @@
 	<stylesheet href="/resources/css/state-box.css" type="text/css"/>
 
 	<component>
-		<component-name>card</component-name>
+		<component-name>info-box</component-name>
 		<template-uri>/WEB-INF/template/infoBox.zul</template-uri>
 	</component>
 	<stylesheet href="/resources/css/info-box.css" type="text/css"/>
