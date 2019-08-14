@@ -4,14 +4,8 @@
             <n:span class="z-label font-weight-bold">Ecommerce Dashboard</n:span>
         </n:div>
     </bs-row>
-    <bs-row viewModel="@id('vm')@init('org.zkoss.admin.ecommerce.StateVM')">
-        <forEach items="@init(vm.states)">
-            <n:div sclass="col-12 col-md-6 col-lg-3 px-1 py-1">
-                <state-box state="@init(each)"
-                           icon="@init(each.type)@converter('org.zkoss.admin.converter.TypeIconConverter')"
-                           color="@init(each.type)@converter('org.zkoss.admin.converter.TypeColorConverter')"/>
-            </n:div>
-        </forEach>
+    <bs-row>
+        <apply templateURI="ecommerce/stateBoard.zul"/>
     </bs-row>
     <bs-row style="min-height: 500px">
         <n:div sclass="col-md-7 px-1 py-1">
