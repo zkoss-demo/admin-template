@@ -1,11 +1,11 @@
 <zk xmlns:n="native">
     <bs-row>
-        <n:div sclass="col-12 px-1">
+        <n:div sclass="col-12 p-1">
             <n:span class="z-label font-weight-bold">Project Dashboard</n:span>
         </n:div>
     </bs-row>
     <bs-row>
-        <n:div class="col-12 px-1 py-1">
+        <n:div class="col-12 p-1">
             <apply templateURI="project/performance.zul"/>
         </n:div>
     </bs-row>
@@ -13,15 +13,15 @@
         <apply templateURI="project/infoBoard.zul"/>
     </bs-row>
     <bs-row>
-        <n:div class="col-12 px-1 py-1">
+        <n:div class="col-12 p-1">
             <apply templateURI="project/progress.zul"/>
         </n:div>
     </bs-row>
     <bs-row style="min-height: 270px">
-        <n:div class="col-lg-8 px-1 py-1">
+        <n:div class="col-lg-8 p-1">
             <apply templateURI="project/activity.zul"/>
         </n:div>
-        <n:div class="col-lg-4 px-1 py-1">
+        <n:div class="col-lg-4 p-1">
             <apply templateURI="project/todo.zul"/>
         </n:div>
     </bs-row>

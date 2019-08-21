@@ -1,6 +1,6 @@
 <zk xmlns:n="native">
     <bs-row>
-        <n:div sclass="col px-1">
+        <n:div sclass="col p-1">
             <n:span class="z-label font-weight-bold">Ecommerce Dashboard</n:span>
         </n:div>
     </bs-row>
@@ -8,23 +8,23 @@
         <apply templateURI="ecommerce/stateBoard.zul"/>
     </bs-row>
     <bs-row style="min-height: 500px">
-        <n:div sclass="col-md-7 px-1 py-1">
+        <n:div sclass="col-md-7 p-1">
             <apply templateURI="ecommerce/revenueReport.zul"/>
         </n:div>
-        <n:div sclass="col-md-5 px-1 py-1">
+        <n:div sclass="col-md-5 p-1">
             <apply templateURI="ecommerce/sales.zul"/>
         </n:div>
     </bs-row>
     <bs-row>
-        <n:div sclass="col-md-5 px-1 py-1">
+        <n:div sclass="col-md-5 p-1">
             <apply templateURI="ecommerce/marketShare.zul"/>
         </n:div>
-        <n:div sclass="col-md-7 px-1 py-1">
+        <n:div sclass="col-md-7 p-1">
             <apply templateURI="ecommerce/import.zul"/>
         </n:div>
     </bs-row>
     <bs-row>
-        <n:div class="col-md-12 px-1">
+        <n:div class="col-md-12 p-1">
             <apply templateURI="ecommerce/productTable.zul"/>
         </n:div>
     </bs-row>
