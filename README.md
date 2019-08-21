@@ -23,10 +23,12 @@ This project can show you:
 ## detail
 This project integrates with the following 3rd party frameworks/resources:
 * [Bootstrap 4.3.1](https://getbootstrap.com/). Customize color with [themestr.app](https://themestr.app/theme)
+
+Why not using [Bootstrap 5](https://mdbootstrap.com/bootstrap-5/)? Since it's not released at the moment we create this project.
 * [Font Awesome·4.7.0.](https://fontawesome.com/v4.7.0/icons/): bundled with ZK framework (since 8.5.2)
 
 
-It includes Bootstrap with [Webjars](https://www.webjars.org/).
+This project includes Bootstrap with [Webjars](https://www.webjars.org/).
 
 
 # How to Run
@@ -57,3 +59,8 @@ visit [http://localhost:8080/admin-template/](http://localhost:8080/admin-templa
 * All mobile browsers
 
 Since this project uses [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties).
+
+
+# Publish
+
+jenkins2/job/update_war/
