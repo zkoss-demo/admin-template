@@ -23,7 +23,7 @@
                 <n:small>${name}</n:small>
             </n:div>
             <n:div class="col-lg-6 py-2">
-                <progressmeter value="${percentage}" width="100%" sclass="${sclass} align-bottom"/>
+                <progressmeter value="${percentage}" width="100%" sclass="${sclass}"/>
             </n:div>
             <n:div class="col-lg-3 ">
                 <n:small>${sale}</n:small>
