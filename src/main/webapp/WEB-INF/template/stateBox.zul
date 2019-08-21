@@ -1,12 +1,12 @@
 <zk xmlns="native" xmlns:z="zul">
     <div class="state-box rounded p-1 ${color}">
-        <div class="row w-100">
+        <div class="row">
             <div class="col-8 px-4">
                 <h6 class="text-black-50">${state.type}</h6>
                 <h4>${state.value}</h4>
                 <z:label sclass="text-success" value="@init(state.ratio)@converter('org.zkoss.admin.converter.PercentageConverter')"/>
             </div>
-            <div class="col-4 text-right px-3">
+            <div class="col-4 text-right px-4">
                 <h2>
                 <i class="${icon} text-black-50 h3"/>
                 </h2>
