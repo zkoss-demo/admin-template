@@ -10,14 +10,7 @@ This project can show you:
 # Screenshots
 3 different screen width:
 
-## Large
-![](image/screenshot-lg.png)
-
-## Medium
-![](image/screenshot-md.png)
-
-## Small
-![](image/screenshot-sm.png)
+![](image/screenshot.png)
 
 
 ## detail
