@@ -24,6 +24,7 @@ public class MarketshareVM {
         productList = EcommerceDao.queryProduct();
         chart.getPlotOptions().getPie().setShadow(false);
         chart.getPlotOptions().getPie().setCenter("50%", "50%");
+        chart.getPlotOptions().getPie().setInnerSize("50%"); //make center hollow
         initSeries();
     }
 
