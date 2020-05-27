@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.zkoss</groupId>
 	<artifactId>admin-template</artifactId>
-	<version>8.6.2-Eval</version>
+	<version>9.0.1.2-Eval</version>
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -49,7 +49,7 @@
 		<dependency>
 			<groupId>org.zkoss.chart</groupId>
 			<artifactId>zkcharts</artifactId>
-			<version>3.0.3-Eval</version>
+			<version>7.2.1.1-Eval</version>
 		</dependency>
 		<dependency>
 			<groupId>org.webjars</groupId>
