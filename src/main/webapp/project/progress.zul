@@ -35,8 +35,8 @@
                             </vlayout>
                         </n:div>
                         <n:div sclass="col-2 text-right">
-                            <button iconSclass="z-icon-trash-o" hflex="min" vflex="1"/>
-                            <button iconSclass="z-icon-volume-down" hflex="min" vflex="1"/>
+                            <button iconSclass="z-icon-trash-o" hflex="min" />
+                            <button iconSclass="z-icon-volume-down" hflex="min" />
                         </n:div>
                     </bs-row>
                 </forEach>
