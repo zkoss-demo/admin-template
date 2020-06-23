@@ -30,3 +30,7 @@
 .container-fluid{
     background-color: #f9fcff;
 }
+
+img.rounded{
+	width: 30px;
+}

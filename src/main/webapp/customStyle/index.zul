@@ -1,0 +1,13 @@
+<?link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css"?>
+<?link rel="stylesheet" href="/resources/css/zk-admin-bootstrap-theme.css"?>
+<?link rel="stylesheet" href="/resources/css/layout.css" ?>
+<?link rel="stylesheet" href="/resources/css/zk-bootstrap.css" ?>
+<?link rel="stylesheet" href="/resources/css/zk-customStyle3.css" ?>
+<zk xmlns:n="native">
+    <hlayout viewModel="@id('vm')@init('org.zkoss.admin.MainVM')" width="100%">
+        <apply templateURI="sidebar.zul" />
+        <div sclass="container-fluid" hflex="1">
+            <apply templateURI="@load(vm.navigationModel.contentUrl)"/>
+        </div>
+    </hlayout>
+</zk>

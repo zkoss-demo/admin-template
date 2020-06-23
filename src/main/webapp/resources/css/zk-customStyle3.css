@@ -1,0 +1,99 @@
+.title{
+	font-size: 24px;
+	font-weight: 500;
+}
+.user-logo {
+	padding-left: 16px;
+}
+.user-logo .z-label{
+	padding-left: 16px;
+	font-size: 16px;
+}
+img.rounded{
+	width: 36px;
+	height: 36px;
+}
+.state-box{
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	border : none;
+	margin: 0;
+	background-color: var(--bs-color);
+}
+.p-1 .state-box{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.p-1{
+	padding: 12px !important;
+}
+.state-box *{
+	margin: 0;
+}
+.state-box h6{
+	color: #fff !important;
+	font-size: 16px;
+	padding-top: 16px;
+	padding-bottom: 8px;
+}
+.state-box h4{
+	color: #fff !important;
+	font-size: 24px;
+	padding-top: 0px;
+	padding-bottom: 8px;
+}
+.state-box span{
+	color: #fff !important;
+	font-size: 12px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.state-box h2{
+	display: none;
+}
+.z-panel {
+	border: none;
+	border-radius: 8px;
+	padding: 16px;
+	background: #fff;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+.z-panel-header{
+	color: rgba(0, 0, 0, 0.9);
+	font-weight: 500;
+	font-size: 18px;
+}
+.z-panel.transparentPanel, .z-panel.transparentPanel .z-panel-body, .z-panel.transparentPanel .z-panelchildren {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	overflow: visible;
+	padding: 0;
+	margin: 0;
+}
+.z-listbox{
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	border-radius: 4px;
+}
+.z-listbox, .z-listheader, .listitem{
+	border: none;
+}
+.container-fluid {
+    background-color: #f0f0f0;
+    padding: 40px;
+}
+.z-navbar{
+	border: none;
+}
+.z-nav-content i:before, .z-navitem-content i:before{
+	color: #d8d8d8;
+}
+.transparentPanel, .transparentPanel .z-panel-body{
+	background-color: transparent !important;
+}
+

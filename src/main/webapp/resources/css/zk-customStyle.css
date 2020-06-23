@@ -1,0 +1,52 @@
+.state-box{
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+	padding: 0;
+	margin: 0;
+}
+.p-1 .state-box{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.state-box *{
+	margin: 0;
+}
+.state-box h6{
+	font-size: 16px;
+	padding-top: 16px;
+	padding-bottom: 8px;
+}
+.state-box h4{
+	font-size: 24px;
+	padding-top: 0px;
+	padding-bottom: 8px;
+}
+.state-box span{
+	font-size: 12px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.state-box h2{
+	display: none;
+}
+.z-panel {
+	border: none;
+}
+.z-panel-header{
+	font-size: 16px;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.9);
+}
+.z-listbox{
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	border-radius: 4px;
+}
+.z-listbox, .z-listheader, .listitem{
+	border: none;
+}

@@ -1,0 +1,16 @@
+<?link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css"?>
+<?link rel="stylesheet" href="/resources/css/zk-admin-bootstrap-theme.css"?>
+<?link rel="stylesheet" href="/resources/css/layout.css" ?>
+<?link rel="stylesheet" href="/resources/css/zk-bootstrap.css" ?>
+<zk xmlns:n="native">
+    <div sclass="container-fluid" hflex="1">
+    	<bs-row>
+    		<apply templateURI="/ecommerce/stateBoard.zul" />
+    	</bs-row>
+	    <bs-row>
+	        <n:div class="col-md-12 p-1">
+	            <apply templateURI="/ecommerce/productTable.zul"/>
+	        </n:div>
+	    </bs-row>
+    </div>
+</zk>

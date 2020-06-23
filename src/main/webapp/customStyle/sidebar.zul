@@ -1,0 +1,29 @@
+<zk xmlns:n="native" xmlns="http://www.zkoss.org/2005/zul">
+    <div sclass="sidebar"  viewModel="@id('vm')@init('org.zkoss.admin.SidebarVM')">
+        <div height="84px" sclass="user-logo">
+            <image src="/resources/image/zklogo-icon.svg" sclass="rounded"/>
+            <if test="@load(not vm.collapsed)">
+                <label value="@init(vm.userName)"/>
+            </if>
+        </div>
+        <navbar orient="vertical" collapsed="@load(vm.collapsed)">
+            <apply template="iterate" menuItems="@load(vm.menuList)"/>
+        </navbar>
+    </div>
+    <template name="iterate">
+        <forEach items="@load(menuItems)">
+            <apply template="@load(empty each.subMenus?'menuitem':'menu')" menuItem="@init(each)"/>
+        </forEach>
+    </template>
+    <template name="menu">
+        <nav label="@init(menuItem.label)" iconSclass="@init(menuItem.icon)"
+             badgeText="@init(vm.collapsed ? '': menuItem.counter)">
+            <apply template="iterate" menuItems="@init(menuItem.subMenus)"/>
+        </nav>
+    </template>
+    <template name="menuitem">
+        <navitem label="@init(menuItem.label)" iconSclass="@init(menuItem.icon)"
+                 onClick="@command('navigate', menu=each)"
+                 selected="@load(vm.navigationModel.contentUrl eq menuItem.path)"/>
+    </template>
+</zk>

@@ -15,7 +15,7 @@ public class EcommerceDao {
     private static CategoryModel productImportModel;
     private static List<Product> productList = new LinkedList<>();
 
-    public static String[] PRODUCT_NAMES = {"Charts", "Framework", "Theme Pack", "Spreadsheet", "Calendar", "Pivot Table"};
+    public static String[] PRODUCT_NAMES = {"Charts", "Framework", "Theme Pack", "Spreadsheet", "Calendar", "Pivot Table", "IDE Plugin", "WYSIWYG Editor","Integration Services", "Dependencies loader"};
 
     static {
         revenueModel = new DefaultCategoryModel();
