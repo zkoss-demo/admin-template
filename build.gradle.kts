@@ -1,7 +1,7 @@
 // Kotlin DSL Primer https://docs.gradle.org/current/userguide/kotlin_dsl.html
 plugins {
     war
-    id("org.gretty") version "2.3.1"
+    id("org.gretty") version "3.0.6"
 }
 group = "org.zkoss"
 version = "1.0-SNAPSHOT"
@@ -14,7 +14,7 @@ repositories {
     mavenCentral()
     jcenter()
     maven {
-        url = uri("http://mavensync.zkoss.org/eval")
+        url = uri("https://mavensync.zkoss.org/eval")
     }
 }
 
@@ -26,6 +26,10 @@ dependencies {
     implementation("org.zkoss.theme:iceblue_c:${zkVer}")
     implementation("org.zkoss.chart:zkcharts:7.2.2.0-Eval")
     implementation("org.webjars:bootstrap:4.6.0")
+}
+
+tasks.war {
+    archiveFileName.set("admin-template.war")
 }
 
 configure<JavaPluginConvention> {
