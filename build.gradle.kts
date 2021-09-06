@@ -16,19 +16,16 @@ repositories {
     maven {
         url = uri("http://mavensync.zkoss.org/eval")
     }
-    maven {
-        url = uri("http://jaspersoft.jfrog.io/jaspersoft/third-party-ce-artifacts/")
-    }// for com.lowagie:itext:2.1.7.js6
 }
 
-val zkVer = "8.6.2-Eval"
+val zkVer = "9.6.0.1-Eval"
 
 dependencies {
     implementation("org.zkoss.zk:zkmax:${zkVer}")
     implementation("org.zkoss.zk:zuti:${zkVer}")
     implementation("org.zkoss.theme:iceblue_c:${zkVer}")
-    implementation("org.zkoss.chart:zkcharts:3.0.3-Eval")
-    implementation("org.webjars:bootstrap:4.3.1")
+    implementation("org.zkoss.chart:zkcharts:7.2.2.0-Eval")
+    implementation("org.webjars:bootstrap:4.6.0")
 }
 
 configure<JavaPluginConvention> {

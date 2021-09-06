@@ -17,10 +17,10 @@ This project can show you:
 
 ## detail
 This project integrates with the following 3rd party frameworks/resources:
-* [Bootstrap 4.3.1](https://getbootstrap.com/). Customize color with [themestr.app](https://themestr.app/theme)
+* [Bootstrap 4.6.0](https://getbootstrap.com/). Customize color with [themestr.app](https://themestr.app/theme)
 
-Why not using [Bootstrap 5](https://mdbootstrap.com/bootstrap-5/)? Since it's not released at the moment we create this project.
-* [Font Awesome·4.7.0.](https://fontawesome.com/v4.7.0/icons/): bundled with ZK framework (since 8.5.2)
+Why not using [Bootstrap 5](https://mdbootstrap.com/bootstrap-5/)? Since was not released at the moment we create this project.
+* [Font Awesome·4.7.0](https://fontawesome.com/v4.7.0/icons/): bundled with ZK framework (since 8.5.2)
 
 
 This project includes Bootstrap with [Webjars](https://www.webjars.org/).
