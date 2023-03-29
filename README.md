@@ -9,6 +9,9 @@ This project can show you:
 
 # [Online Demo](https://www.zkoss.org/admin-template/)
 
+# Article
+[Use Bootstrap with ZK: Responsive Admin Template](https://www.zkoss.org/wiki/Small_Talks/2019/August/Use_Bootstrap_with_ZK:_Responsive_Admin_Template)
+
 # Screenshots
 3 different screen width:
 
