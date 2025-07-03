@@ -52,9 +52,9 @@
 			<version>8.2.0.0-Eval</version>
 		</dependency>
 		<dependency>
-			<groupId>org.webjars</groupId>
-			<artifactId>bootstrap</artifactId>
-			<version>4.6.0</version>
+			<groupId>org.zkoss.zkforge</groupId>
+			<artifactId>bootstrap-helper</artifactId>
+			<version>4.6.2</version>
 		</dependency>
 	</dependencies>
 	<build>
